@@ -19,39 +19,38 @@ public class JLabelConSaltos extends JLabel{
 
     @Override
     protected void paintComponent(Graphics g) {
-        
-       super.paintComponent(g);  // Llamada a super para que se dibuje el fondo, borde, etc.
-       setText("");  // Elimina el texto predeterminado
+        super.paintComponent(g);  // Dibuja el fondo y bordes del componente
+        setText("");
 
-       // Convertir Graphics a Graphics2D para mayor control
-       Graphics2D g2d = (Graphics2D) g;
+        // Convertir Graphics a Graphics2D
+        Graphics2D g2d = (Graphics2D) g;
 
-       // Activar antialiasing para mejorar la calidad del texto
-       g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-       g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+        // Activar antialiasing para texto de mejor calidad
+        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
 
-       // Se configura la fuente y el color
-       g2d.setFont(getFont());
-       g2d.setColor(getForeground());
+        //Configurar fuente y color
+        g2d.setFont(getFont());
+        g2d.setColor(getForeground());
 
-       // Dividir el texto en líneas usando el salto de línea '\n'
-       String[] lineas = texto.split("\n");
+        //Dividir el texto en líneas usando '\n'
+        String[] lineas = texto.split("\n");
 
-       // Obtener las métricas de la fuente
-       FontMetrics fm = g2d.getFontMetrics();
+        //Obtener métricas de fuente
+        FontMetrics fm = g2d.getFontMetrics();
 
-       // Se calcula la posición inicial para dibujar las líneas
-       int y = getInsets().top + fm.getAscent();  // Posición y inicial (margen superior)
+        //Calcular la altura total del texto (considerando todas las líneas)
+        int alturaTexto = lineas.length * fm.getHeight();
 
-       // Dibujar solo la primera línea centrada
-       for (String linea : lineas) {
-           // Línea centrada
-           int xCentro = (getWidth() - fm.stringWidth(linea)) / 2;  // Centrado horizontal
-           g2d.drawString(linea, xCentro, y);
+        //Calcular el punto inicial Y para centrar verticalmente
+        int yInicio = (getHeight() - alturaTexto) / 2 + fm.getAscent();
 
-           // Incrementar la posición y para la siguiente línea
-           y += fm.getHeight() - 5;
-       }
-       
-   }
+        //Dibujar cada línea centrada horizontalmente
+        for (String linea : lineas) {
+            int xCentro = (getWidth() - fm.stringWidth(linea)) / 2;  //Centrado horizontal
+            g2d.drawString(linea, xCentro, yInicio);
+            yInicio += fm.getHeight();  //Incrementar para la siguiente línea
+        }
+    }
+
 }

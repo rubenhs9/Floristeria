@@ -127,7 +127,7 @@ public class panelOpciones extends javax.swing.JPanel {
         gbc.insets = new Insets(10, 10, 10, 10); //Espacio entre los botones
         gbc.anchor = GridBagConstraints.CENTER; 
         //Crear botones para las opciones del menú
-        int widthBoton = 280;
+        int widthBoton = 230;
         int heightBoton = 65;
         
         //PRIMER BOTON
@@ -203,7 +203,7 @@ public class panelOpciones extends javax.swing.JPanel {
         
         
         //TERCER BOTON
-        JLabel tercerBoton = new JLabel("VENDER GÉNERO");
+        JLabel tercerBoton = new JLabel("AGREGAR AL STOCK");
         tercerBoton.setPreferredSize(new Dimension(widthBoton, heightBoton));
         tercerBoton.setBackground(colorPrimario);
         tercerBoton.setOpaque(true);
@@ -214,12 +214,12 @@ public class panelOpciones extends javax.swing.JPanel {
         tercerBoton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-//                panelOpcionesClasificacion panelOpcionesClasificacion = new panelOpcionesClasificacion(panelPrincipal, panelOpciones.this, campeonato, colorPrimario);
-//                panelPrincipal.remove(panelOpciones.this);
-//                panelPrincipal.add(panelOpcionesClasificacion, BorderLayout.CENTER);
-//                panelPrincipal.revalidate();
-//                panelPrincipal.repaint();
-//                tercerBoton.setBackground(colorPrimario);
+                panelAgregarAlStock panelAgregarAlStock = new panelAgregarAlStock(panelPrincipal, panelOpciones.this, floristeriaApp, colorPrimario);
+                panelPrincipal.remove(panelOpciones.this);
+                panelPrincipal.add(panelAgregarAlStock, BorderLayout.CENTER);
+                panelPrincipal.revalidate();
+                panelPrincipal.repaint();
+                tercerBoton.setBackground(colorPrimario);
             }
 
             @Override
@@ -237,7 +237,7 @@ public class panelOpciones extends javax.swing.JPanel {
         
         
         //CUARTO BOTON
-        JLabel cuartoboton = new JLabel("COSULTAR GANANCIAS");
+        JLabel cuartoboton = new JLabel("VENDER GÉNERO");
         cuartoboton.setPreferredSize(new Dimension(widthBoton, heightBoton));
         cuartoboton.setBackground(colorPrimario);
         cuartoboton.setOpaque(true);
@@ -268,6 +268,39 @@ public class panelOpciones extends javax.swing.JPanel {
         });
         gbc.gridx = 4; 
         panelOps.add(cuartoboton, gbc);
+        
+        //QUINTO BOTON
+        JLabelConSaltos quintoboton = new JLabelConSaltos("COSULTAR\nGANANCIAS");
+        quintoboton.setPreferredSize(new Dimension(widthBoton, heightBoton));
+        quintoboton.setBackground(colorPrimario);
+        quintoboton.setOpaque(true);
+        quintoboton.setForeground(Color.WHITE);
+        quintoboton.setFont(new Font("Arial",Font.BOLD,20));
+        quintoboton.setHorizontalAlignment(SwingConstants.CENTER);
+        quintoboton.setVerticalAlignment(SwingConstants.CENTER);
+        quintoboton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+//                panelOpcionesClasificacion panelOpcionesClasificacion = new panelOpcionesClasificacion(panelPrincipal, panelOpciones.this, campeonato, colorPrimario);
+//                panelPrincipal.remove(panelOpciones.this);
+//                panelPrincipal.add(panelOpcionesClasificacion, BorderLayout.CENTER);
+//                panelPrincipal.revalidate();
+//                panelPrincipal.repaint();
+//                tercerBoton.setBackground(colorPrimario);
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                quintoboton.setBackground(Color.DARK_GRAY);
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                quintoboton.setBackground(colorPrimario);
+            }
+        });
+        gbc.gridx = 5; 
+        panelOps.add(quintoboton, gbc);
         
         
         this.add(panelOps, BorderLayout.CENTER);
