@@ -1,6 +1,8 @@
 package GUI;
 
 import controller.FloristeriaApp;
+import data.Flor;
+import data.Planta;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -12,11 +14,14 @@ import java.awt.Insets;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
@@ -29,8 +34,9 @@ public class panelAddProductos extends javax.swing.JPanel {
     private Color colorPrimario;
     private JLabel cambiante;
     private FloristeriaApp floristeriaApp;
+    private boolean flor = true;
 
-    public panelAddProductos(JPanel panelPrincipal, JPanel panelOpciones, FloristeriaApp flor, Color colorPrimario) {
+    public panelAddProductos(JPanel panelPrincipal, JPanel panelOpciones, FloristeriaApp floristeriaApp, Color colorPrimario) {
         this.panelOpciones = panelOpciones;
         this.panelPrincipal = panelPrincipal;
         this.colorPrimario = colorPrimario;
@@ -103,89 +109,159 @@ public class panelAddProductos extends javax.swing.JPanel {
 }
 
     private void agregarRegistro() {
-        JPanel panelCentral = new JPanel(new GridBagLayout());
-        panelCentral.setBackground(Color.WHITE);
-        GridBagConstraints gbc = new GridBagConstraints();
-        gbc.insets = new Insets(20, 10, 40, 0); // Espacio que hay entre los componentes
-        gbc.fill = GridBagConstraints.HORIZONTAL;
+    JPanel panelCentral = new JPanel(new GridBagLayout());
+    panelCentral.setBackground(Color.WHITE);
+    GridBagConstraints gbc = new GridBagConstraints();
+    gbc.insets = new Insets(20, 10, 40, 0); // Espacio entre componentes
+    gbc.fill = GridBagConstraints.HORIZONTAL;
 
-        gbc.gridy = 0;
+    gbc.gridy = 0;
 
-        // FILA 2: NOMBRE DE CLIENTE
-        JLabel nombre = new JLabel("Nombre: ");
-        nombre.setFont(new Font("Microsoft YaHei UI", Font.BOLD, 25));
-        gbc.gridx = 0;
-        gbc.gridy = 1;
-        gbc.gridwidth = 1;
-        panelCentral.add(nombre, gbc);
+    // FILA 2: NOMBRE DE CLIENTE
+    JLabel nombreLabel = new JLabel("Nombre: ");
+    nombreLabel.setFont(new Font("Microsoft YaHei UI", Font.BOLD, 25));
+    gbc.gridx = 0;
+    gbc.gridy = 1;
+    gbc.gridwidth = 1;
+    panelCentral.add(nombreLabel, gbc);
 
-        JTextField campoNombre = new JTextField(35);
-        campoNombre.setFont(new Font("Microsoft YaHei UI", Font.PLAIN, 25));
-        gbc.gridx = 1;
-        gbc.gridy = 1;
-        panelCentral.add(campoNombre, gbc);
+    JTextField campoNombre = new JTextField(35);
+    campoNombre.setFont(new Font("Microsoft YaHei UI", Font.PLAIN, 25));
+    gbc.gridx = 1;
+    gbc.gridy = 1;
+    panelCentral.add(campoNombre, gbc);
 
-        // FILA 3: STOCK
-        JLabel dni = new JLabel("Stock: ");
-        dni.setFont(new Font("Microsoft YaHei UI", Font.BOLD, 25));
-        gbc.gridx = 0;
-        gbc.gridy = 2;
-        panelCentral.add(dni, gbc);
+    // FILA 3: STOCK
+    JLabel stockLabel = new JLabel("Stock: ");
+    stockLabel.setFont(new Font("Microsoft YaHei UI", Font.BOLD, 25));
+    gbc.gridx = 0;
+    gbc.gridy = 2;
+    panelCentral.add(stockLabel, gbc);
 
-        JTextField campoDNI = new JTextField(35);
-        campoDNI.setFont(new Font("Microsoft YaHei UI", Font.PLAIN, 25));
-        gbc.gridx = 1;
-        gbc.gridy = 2;
-        panelCentral.add(campoDNI, gbc);
+    JTextField campoStock = new JTextField(35);
+    campoStock.setFont(new Font("Microsoft YaHei UI", Font.PLAIN, 25));
+    gbc.gridx = 1;
+    gbc.gridy = 2;
+    panelCentral.add(campoStock, gbc);
 
-        // FILA 4: PRECIO
-        JLabel precio = new JLabel("Precio: ");
-        precio.setFont(new Font("Microsoft YaHei UI", Font.BOLD, 25));
-        gbc.gridx = 0;
-        gbc.gridy = 3;
-        panelCentral.add(precio, gbc);
-
-        JTextField campoPrecio = new JTextField(35);
-        campoPrecio.setFont(new Font("Microsoft YaHei UI", Font.PLAIN, 25));
-        gbc.gridx = 1;
-        gbc.gridy = 3;
-        panelCentral.add(campoPrecio, gbc);
-
-        // FILA 5: COLOR / TAMAÑO
-        cambiante = new JLabel("Color: ");
-        cambiante.setFont(new Font("Microsoft YaHei UI", Font.BOLD, 25));
-        gbc.gridx = 0;
-        gbc.gridy = 4;
-        panelCentral.add(cambiante, gbc);
-
-        JTextField campoColor = new JTextField(35);
-        campoColor.setFont(new Font("Microsoft YaHei UI", Font.PLAIN, 25));
-        gbc.gridx = 1;
-        gbc.gridy = 4;
-        panelCentral.add(campoColor, gbc);
-
-        // FILA 6: BOTÓN GUARDAR
-        JButton botonConfirmar = new JButton("CONFIRMAR");
-        botonConfirmar.setBackground(colorPrimario);
-        botonConfirmar.setForeground(Color.WHITE);
-        botonConfirmar.setFont(new Font("Microsoft YaHei UI", Font.BOLD, 20));
-        gbc.gridx = 0;
-        gbc.gridy = 5;
-        gbc.gridwidth = 2;
-        panelCentral.add(botonConfirmar, gbc);
-
-        // HAZ EL ACTION LISTENER
-        botonConfirmar.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String nombre = campoNombre.getText().trim();
-                String dni = campoDNI.getText().trim();
-    //                guardarDatos(nombre, dni);
+    campoStock.addKeyListener(new KeyAdapter() {
+        @Override
+        public void keyTyped(KeyEvent e) {
+            char caracter = e.getKeyChar();
+            if (!Character.isDigit(caracter)) {
+                e.consume(); // Ignorar caracteres no numéricos
             }
-        });
+        }
+    });
 
-        this.add(panelCentral, BorderLayout.SOUTH);
-    }
+    // FILA 4: PRECIO
+    JLabel precioLabel = new JLabel("Precio: ");
+    precioLabel.setFont(new Font("Microsoft YaHei UI", Font.BOLD, 25));
+    gbc.gridx = 0;
+    gbc.gridy = 3;
+    panelCentral.add(precioLabel, gbc);
+
+    JTextField campoPrecio = new JTextField(35);
+    campoPrecio.setFont(new Font("Microsoft YaHei UI", Font.PLAIN, 25));
+    gbc.gridx = 1;
+    gbc.gridy = 3;
+    panelCentral.add(campoPrecio, gbc);
+
+    campoPrecio.addKeyListener(new KeyAdapter() {
+        @Override
+        public void keyTyped(KeyEvent e) {
+            char caracter = e.getKeyChar();
+            String textoActual = campoPrecio.getText() + caracter;
+
+            // Permitir solo números y un punto decimal
+            if (!textoActual.matches("\\d*\\.?\\d*")) {
+                e.consume(); // Ignorar caracteres no válidos
+            }
+        }
+    });
+
+    // FILA 5: COLOR / TAMAÑO
+    JLabel cambiante = new JLabel("Color: ");
+    cambiante.setFont(new Font("Microsoft YaHei UI", Font.BOLD, 25));
+    gbc.gridx = 0;
+    gbc.gridy = 4;
+    panelCentral.add(cambiante, gbc);
+
+    JTextField campoColor = new JTextField(35);
+    campoColor.setFont(new Font("Microsoft YaHei UI", Font.PLAIN, 25));
+    gbc.gridx = 1;
+    gbc.gridy = 4;
+    panelCentral.add(campoColor, gbc);
+
+    // FILA 6: BOTÓN GUARDAR
+    JLabel botonConfirmar = new JLabel("CONFIRMAR", JLabel.CENTER);
+    botonConfirmar.setBackground(colorPrimario);
+    botonConfirmar.setOpaque(true);
+    botonConfirmar.setForeground(Color.WHITE);
+    botonConfirmar.setFont(new Font("Arial", Font.BOLD, 35));
+    botonConfirmar.setPreferredSize(new Dimension(200, 45));
+    gbc.gridx = 0;
+    gbc.gridy = 5;
+    gbc.gridwidth = 2;
+    panelCentral.add(botonConfirmar, gbc);
+
+    // Acción del botón
+    botonConfirmar.addMouseListener(new MouseAdapter() {
+        @Override
+        public void mouseClicked(MouseEvent e) {
+            try {
+                String nombre = campoNombre.getText().trim();
+                String stockText = campoStock.getText().trim();
+                String precioText = campoPrecio.getText().trim();
+                String color = campoColor.getText().trim();
+
+                // Validar datos
+                if (nombre.isEmpty() || nombre.length() > 20) {
+                    JOptionPane.showMessageDialog(panelCentral, "El nombre no puede estar vacío ni exceder 20 caracteres.");
+                    return;
+                }
+                if (stockText.isEmpty()) {
+                    JOptionPane.showMessageDialog(panelCentral, "El stock debe ser un número válido.");
+                    return;
+                }
+                if (precioText.isEmpty()) {
+                    JOptionPane.showMessageDialog(panelCentral, "El precio debe ser un número válido.");
+                    return;
+                }
+                if (color.isEmpty() || color.length() > 40) {
+                    JOptionPane.showMessageDialog(panelCentral, "El color no puede estar vacío ni exceder 40 caracteres.");
+                    return;
+                }
+
+                int stock = Integer.parseInt(stockText);
+                double precio = Double.parseDouble(precioText);
+
+                // Agregar producto a la floristería
+                if (flor) {
+                    floristeriaApp.agregarProducto(new Flor(nombre, stock, precio, color));
+                } else {
+                    floristeriaApp.agregarProducto(new Planta(nombre, stock, precio, color));
+                }
+
+                JOptionPane.showMessageDialog(panelCentral, "Producto agregado correctamente.");
+            } catch (NumberFormatException ex) {
+                JOptionPane.showMessageDialog(panelCentral, "Por favor, ingresa valores válidos.");
+            }
+        }
+
+        @Override
+        public void mouseEntered(MouseEvent e) {
+            botonConfirmar.setBackground(Color.DARK_GRAY);
+        }
+
+        @Override
+        public void mouseExited(MouseEvent e) {
+            botonConfirmar.setBackground(colorPrimario);
+        }
+    });
+
+    this.add(panelCentral, BorderLayout.SOUTH);
+}
 
     private void botonVolverAtras() {
         JPanel panelIrHaciaAtras = new JPanel(new FlowLayout(FlowLayout.LEFT));
