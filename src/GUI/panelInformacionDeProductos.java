@@ -128,6 +128,9 @@ public class panelInformacionDeProductos extends javax.swing.JPanel {
     private JPanel tableContent;
 
     private void minitComponents() {
+        //PANEL GLOBAL
+        JPanel panelCentral = new JPanel();
+        panelCentral.setLayout(new BorderLayout());
         //Panel para el selector
         JPanel selectorPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 20, 10));
         selectorPanel.setOpaque(false);
@@ -180,9 +183,9 @@ public class panelInformacionDeProductos extends javax.swing.JPanel {
         tablePanel.add(scrollPane, BorderLayout.CENTER);
 
         // Añadir ambos paneles al layout principal
-        this.add(selectorPanel, BorderLayout.NORTH);
-        this.add(tablePanel, BorderLayout.CENTER);
-
+        panelCentral.add(selectorPanel, BorderLayout.NORTH);
+        panelCentral.add(tablePanel, BorderLayout.CENTER);
+        this.add(panelCentral, BorderLayout.CENTER);
         // Inicializar con todos los productos
         actualizarTabla("TODO");
     }
