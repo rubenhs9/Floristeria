@@ -15,4 +15,10 @@ public class Planta extends Producto{
     public String getDetalle() {
         return getNombre() + " (" + tamaño + ")";
     }
+
+    public String getTamaño() {
+        return tamaño;
+    }
+    
+    
 }

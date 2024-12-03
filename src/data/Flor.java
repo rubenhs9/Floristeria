@@ -15,4 +15,10 @@ public class Flor extends Producto{
     public String getDetalle() {
         return getNombre() + " (" + color + ")";
     }
+
+    public String getColor() {
+        return color;
+    }
+    
+    
 }
