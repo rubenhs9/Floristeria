@@ -74,6 +74,17 @@ public class FloristeriaApp {
         productos.add(new Flor("Margarita blanca", 8, 1.0, "Blanco"));
         productos.add(new Flor("Lirio morado", 5, 3.0, "Morado"));
         productos.add(new Flor("Clavel rosado", 20, 1.8, "Rosado"));
+        productos.add(new Flor("Rosa amarilla", 12, 1.6, "Amarillo"));
+        productos.add(new Flor("Peonía blanca", 9, 2.8, "Blanco"));
+        productos.add(new Flor("Girasol", 15, 2.2, "Amarillo"));
+        productos.add(new Flor("Hortensia azul", 7, 3.5, "Azul"));
+        productos.add(new Flor("Gladiolo naranja", 8, 1.9, "Naranja"));
+        productos.add(new Flor("Rosa negra", 3, 5.0, "Negro"));
+        productos.add(new Flor("Clavel amarillo", 20, 1.4, "Amarillo"));
+        productos.add(new Flor("Orquídea blanca", 5, 18.0, "Blanco"));
+        productos.add(new Flor("Narciso", 10, 2.3, "Amarillo"));
+        productos.add(new Flor("Violeta africana", 12, 1.7, "Morado"));
+
 
         //Plantas
         productos.add(new Planta("Cactus pequeño", 12, 5.0, "50x100"));
@@ -81,6 +92,16 @@ public class FloristeriaApp {
         productos.add(new Planta("Bonsái", 4, 25.0, "30x50"));
         productos.add(new Planta("Orquídea azul", 6, 15.0, "40x60"));
         productos.add(new Planta("Palma areca", 10, 20.0, "150x200"));
+        productos.add(new Planta("Cactus grande", 6, 12.0, "70x120"));
+        productos.add(new Planta("Palo de agua", 5, 30.0, "150x200"));
+        productos.add(new Planta("Sansevieria", 12, 10.0, "100x150"));
+        productos.add(new Planta("Hiedra trepadora", 15, 8.5, "200x300"));
+        productos.add(new Planta("Planta araña", 18, 6.5, "50x70"));
+        productos.add(new Planta("Palma kentia", 8, 25.0, "120x180"));
+        productos.add(new Planta("Drácena", 7, 20.0, "150x200"));
+        productos.add(new Planta("Planta ZZ", 10, 15.0, "100x150"));
+        productos.add(new Planta("Bamboo de la suerte", 25, 5.5, "50x100"));
+        productos.add(new Planta("Crotón", 6, 12.5, "80x120"));
 
         //Más flores
         productos.add(new Flor("Rosa blanca", 18, 1.7, "Blanco"));
