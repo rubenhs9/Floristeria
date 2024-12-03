@@ -19,6 +19,7 @@ public class JLabelConSaltos extends JLabel{
 
     @Override
     protected void paintComponent(Graphics g) {
+        
        super.paintComponent(g);  // Llamada a super para que se dibuje el fondo, borde, etc.
        setText("");  // Elimina el texto predeterminado
 
@@ -51,5 +52,6 @@ public class JLabelConSaltos extends JLabel{
            // Incrementar la posición y para la siguiente línea
            y += fm.getHeight() - 5;
        }
+       
    }
 }

@@ -27,6 +27,7 @@ public class panelPrincipal extends javax.swing.JPanel {
     public panelPrincipal(Vpal vpal, FloristeriaApp floristeriaApp) {
         this.vpal = vpal; 
         this.floristeriaApp = floristeriaApp;
+        
         this.setLayout(new BorderLayout());
         minitComponents();
     }

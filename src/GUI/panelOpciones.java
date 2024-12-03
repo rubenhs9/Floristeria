@@ -142,12 +142,13 @@ public class panelOpciones extends javax.swing.JPanel {
         primerBoton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-//                panelOpcionesAltas panelOpcionesAltas = new panelOpcionesAltas(panelPrincipal,panelOpciones.this, campeonato, colorPrimario);
-//                panelPrincipal.remove(panelOpciones.this);
-//                panelPrincipal.add(panelOpcionesAltas, BorderLayout.CENTER);
-//                panelPrincipal.revalidate();
-//                panelPrincipal.repaint();
-//                primerBoton.setBackground(colorPrimario);
+                panelAddProductos panelAddProductos = new panelAddProductos(panelPrincipal,panelOpciones.this, floristeriaApp, colorPrimario);
+                panelPrincipal.remove(panelOpciones.this);
+                System.out.println("Eliminando panel: panelOpciones ");
+                panelPrincipal.add(panelAddProductos, BorderLayout.CENTER);
+                panelPrincipal.revalidate();
+                panelPrincipal.repaint();
+                primerBoton.setBackground(colorPrimario);
             }
 
             @Override
