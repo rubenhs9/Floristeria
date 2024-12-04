@@ -8,6 +8,7 @@ import data.Producto;
 import data.Venta;
 import java.util.ArrayList;
 import java.util.Date;
+import javax.swing.JOptionPane;
 
 public class FloristeriaApp {
     
@@ -48,13 +49,15 @@ public class FloristeriaApp {
             throw new Exception("Producto no encontrado.");
         }
         if (producto.getStock() < cantidad) {
-            throw new Exception("Stock insuficiente.");
+            JOptionPane.showMessageDialog(null,"Stock insuficiente","ERROR",0);
+        }else{
+            producto.reducirStock(cantidad);
+            ventas.add(new Venta(producto, cantidad, new Date()));
+            if (producto.getStock() < 3) {
+                JOptionPane.showMessageDialog(null,"Advertencia: Quedan menos de 3 unidades de " + nombre);
+            }
         }
-        producto.reducirStock(cantidad);
-        ventas.add(new Venta(producto, cantidad, new Date()));
-        if (producto.getStock() < 3) {
-            System.out.println("Advertencia: Quedan menos de 3 unidades de " + nombre);
-        }
+        
     }
 
     public double calcularGananciasHasta(Date fecha) {

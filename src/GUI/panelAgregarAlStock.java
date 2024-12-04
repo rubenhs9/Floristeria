@@ -60,7 +60,7 @@ public class panelAgregarAlStock extends javax.swing.JPanel {
         minitComponents();
     }
 
-        private void botonVolverAtras(){
+    private void botonVolverAtras(){
         //CREAMOS EL PANEL DE ARRIBA DONDE ESTARA EL BOTON DE VOLVER
         JPanel panelInfo = new JPanel(new BorderLayout());
         panelInfo.setOpaque(false);
