@@ -39,6 +39,7 @@ public class panelAddProductos extends javax.swing.JPanel {
         this.panelPrincipal = panelPrincipal;
         this.colorPrimario = colorPrimario;
         this.floristeriaApp = floristeriaApp;
+        this.cambiante = new JLabel();
         this.setLayout(new BorderLayout());
         this.setOpaque(false);
         this.setBackground(colorPrimario);
@@ -240,6 +241,12 @@ public class panelAddProductos extends javax.swing.JPanel {
                 } else {
                     floristeriaApp.agregarProducto(new Planta(nombre, stock, precio, color));
                 }
+                
+                campoNombre.setText("");
+                campoStock.setText("");
+                campoPrecio.setText("");
+                campoColor.setText("");
+                
 
                 JOptionPane.showMessageDialog(panelCentral, "Producto agregado correctamente.");
             } catch (NumberFormatException ex) {
