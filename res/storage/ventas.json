@@ -1,37 +1,42 @@
 [
     {
-        "fecha": "Wed Dec 04 18:45:19 CET 2024",
+        "fecha": "Thu Dec 05 00:08:48 CET 2024",
         "producto": {
-            "precio": 2.5,
-            "nombre": "Tulipán rosado"
-        }
+            "precio": 3.5,
+            "nombre": "Hortensia azul"
+        },
+        "cantidad": 2
     },
     {
-        "fecha": "Wed Dec 04 18:45:30 CET 2024",
+        "fecha": "Thu Dec 05 00:10:24 CET 2024",
         "producto": {
             "precio": 1.9,
             "nombre": "Gladiolo naranja"
-        }
+        },
+        "cantidad": 1
     },
     {
-        "fecha": "Wed Dec 04 18:45:32 CET 2024",
+        "fecha": "Thu Dec 05 00:10:29 CET 2024",
         "producto": {
-            "precio": 1.8,
-            "nombre": "Clavel rosado"
-        }
+            "precio": 1.4,
+            "nombre": "Clavel amarillo"
+        },
+        "cantidad": 1
     },
     {
-        "fecha": "Wed Dec 04 18:45:34 CET 2024",
+        "fecha": "Thu Dec 05 00:10:33 CET 2024",
         "producto": {
-            "precio": 5,
-            "nombre": "Rosa negra"
-        }
+            "precio": 7.5,
+            "nombre": "Helecho"
+        },
+        "cantidad": 1
     },
     {
-        "fecha": "Wed Dec 04 18:45:37 CET 2024",
+        "fecha": "Thu Dec 05 00:10:42 CET 2024",
         "producto": {
-            "precio": 1.7,
-            "nombre": "Violeta africana"
-        }
+            "precio": 2,
+            "nombre": "Jazmín"
+        },
+        "cantidad": 1
     }
 ]

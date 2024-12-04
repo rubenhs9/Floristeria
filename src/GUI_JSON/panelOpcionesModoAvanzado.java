@@ -42,7 +42,7 @@ public class panelOpcionesModoAvanzado extends javax.swing.JPanel {
         this.floristeriaApp = floristeriaApp;
         this.colorPrimario = colorPrimario;
         this.guardarDatos = new guardarDatos();
-        this.guardarDatosJSON = new guardarDatosJSON();
+        this.guardarDatosJSON = new guardarDatosJSON(floristeriaApp);
         this.setLayout(new BorderLayout());
         
 //        ImageIcon imagen = new ImageIcon(campeonato.getBackground());

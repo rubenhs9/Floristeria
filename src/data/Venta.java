@@ -8,9 +8,9 @@ public class Venta {
     
     private Producto producto;
     private int cantidad;
-    private Date fecha;
+    private String fecha;
 
-    public Venta(Producto producto, int cantidad, Date fecha) {
+    public Venta(Producto producto, int cantidad, String fecha) {
         this.producto = producto;
         this.cantidad = cantidad;
         this.fecha = fecha;
@@ -20,7 +20,7 @@ public class Venta {
         return producto.getPrecio() * cantidad;
     }
 
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 

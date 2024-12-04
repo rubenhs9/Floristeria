@@ -2,12 +2,18 @@
 package controller;
 
 import GUI.Vpal;
+import GUI_JSON.guardarDatosJSON;
 import data.Flor;
 import data.Planta;
 import data.Producto;
 import data.Venta;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Locale;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 public class FloristeriaApp {
@@ -15,13 +21,20 @@ public class FloristeriaApp {
     private String nombre;
     private ArrayList<Producto> productos;
     private ArrayList<Venta> ventas;
+    
+    private guardarDatosJSON guardarDatosJSON;
 
     public FloristeriaApp(String nombre) {
         this.nombre = nombre;
         productos = new ArrayList<>();
         ventas = new ArrayList<>();
+        this.guardarDatosJSON = new guardarDatosJSON(this);
         
-        datosDePrueba();
+//        datosDePrueba();
+
+        cargarDatosJSON();
+
+
         modoGrafico();
         
     }
@@ -57,7 +70,8 @@ public class FloristeriaApp {
             JOptionPane.showMessageDialog(null,"Stock insuficiente","ERROR",0);
         }else{
             producto.reducirStock(cantidad);
-            ventas.add(new Venta(producto, cantidad, new Date()));
+            Date date = new Date();
+            ventas.add(new Venta(producto, cantidad, date.toString()));
             if (producto.getStock() < 3) {
                 JOptionPane.showMessageDialog(null,"Advertencia: Quedan menos de 3 unidades de " + nombre);
             }
@@ -67,11 +81,25 @@ public class FloristeriaApp {
 
     public double calcularGananciasHasta(Date fecha) {
         double ganancias = 0;
+
+        // Definir el formato de fecha que usaste para guardar la fecha como String
+        SimpleDateFormat dateFormat = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy", Locale.ENGLISH);
+
         for (Venta venta : ventas) {
-            if (!venta.getFecha().after(fecha)) {
-                ganancias += venta.getTotal();
+            try {
+                // Convertir el String de la fecha en un objeto Date
+                java.util.Date fechaVenta = dateFormat.parse(venta.getFecha());  // Asumiendo que getFecha() devuelve un String
+
+                // Comparar las fechas: si la fecha de la venta es antes o igual a la fecha pasada como parámetro
+                if (!fechaVenta.after(fecha)) {
+                    ganancias += venta.getTotal();  // Sumar las ganancias
+                }
+            } catch (Exception e) {
+                System.out.println("Error al convertir la fecha de la venta: " + venta.getFecha());
+                e.printStackTrace();
             }
         }
+
         return ganancias;
     }
 
@@ -131,6 +159,15 @@ public class FloristeriaApp {
     private void modoGrafico() {
         Vpal vpal = new Vpal(this);
         vpal.setVisible(true);
+    }
+
+    private void cargarDatosJSON() {
+        try {
+            guardarDatosJSON.cargarProductos();
+            guardarDatosJSON.cargarVentas();
+        } catch (IOException ex) {
+            Logger.getLogger(FloristeriaApp.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
    
