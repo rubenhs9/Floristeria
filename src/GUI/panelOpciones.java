@@ -248,12 +248,12 @@ public class panelOpciones extends javax.swing.JPanel {
         cuartoboton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-//                panelOpcionesClasificacion panelOpcionesClasificacion = new panelOpcionesClasificacion(panelPrincipal, panelOpciones.this, campeonato, colorPrimario);
-//                panelPrincipal.remove(panelOpciones.this);
-//                panelPrincipal.add(panelOpcionesClasificacion, BorderLayout.CENTER);
-//                panelPrincipal.revalidate();
-//                panelPrincipal.repaint();
-//                tercerBoton.setBackground(colorPrimario);
+                panelVentas panelVentas = new panelVentas(panelPrincipal, panelOpciones.this, floristeriaApp, colorPrimario);
+                panelPrincipal.remove(panelOpciones.this);
+                panelPrincipal.add(panelVentas, BorderLayout.CENTER);
+                panelPrincipal.revalidate();
+                panelPrincipal.repaint();
+                cuartoboton.setBackground(colorPrimario);
             }
 
             @Override
@@ -281,12 +281,12 @@ public class panelOpciones extends javax.swing.JPanel {
         quintoboton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-//                panelOpcionesClasificacion panelOpcionesClasificacion = new panelOpcionesClasificacion(panelPrincipal, panelOpciones.this, campeonato, colorPrimario);
-//                panelPrincipal.remove(panelOpciones.this);
-//                panelPrincipal.add(panelOpcionesClasificacion, BorderLayout.CENTER);
-//                panelPrincipal.revalidate();
-//                panelPrincipal.repaint();
-//                tercerBoton.setBackground(colorPrimario);
+                panelConsultarGanancias panelConsultarGanancias = new panelConsultarGanancias(panelPrincipal, panelOpciones.this, floristeriaApp, colorPrimario);
+                panelPrincipal.remove(panelOpciones.this);
+                panelPrincipal.add(panelConsultarGanancias, BorderLayout.CENTER);
+                panelPrincipal.revalidate();
+                panelPrincipal.repaint();
+                quintoboton.setBackground(colorPrimario);
             }
 
             @Override
