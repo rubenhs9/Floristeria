@@ -1,5 +1,7 @@
 package GUI_JSON;
 
+import data.Flor;
+import data.Planta;
 import data.Producto;
 import data.Venta;
 import org.json.JSONArray;
@@ -67,6 +69,15 @@ public class guardarDatosJSON {
             JSONObject productoJSON = new JSONObject();
             productoJSON.put("nombre", producto.getNombre());
             productoJSON.put("precio", producto.getPrecio());
+            productoJSON.put("stock", producto.getStock());
+            if (producto instanceof Flor) {
+                Flor flor = (Flor) producto;
+                productoJSON.put("Color", flor.getColor());
+            }else{
+                Planta planta = (Planta) producto;
+                productoJSON.put("Tamaño", planta.getTamaño());
+            }
+            
             productosArray.put(productoJSON);
         }
 

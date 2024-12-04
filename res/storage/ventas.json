@@ -1,1 +1,37 @@
-[]
+[
+    {
+        "fecha": "Wed Dec 04 18:45:19 CET 2024",
+        "producto": {
+            "precio": 2.5,
+            "nombre": "Tulipán rosado"
+        }
+    },
+    {
+        "fecha": "Wed Dec 04 18:45:30 CET 2024",
+        "producto": {
+            "precio": 1.9,
+            "nombre": "Gladiolo naranja"
+        }
+    },
+    {
+        "fecha": "Wed Dec 04 18:45:32 CET 2024",
+        "producto": {
+            "precio": 1.8,
+            "nombre": "Clavel rosado"
+        }
+    },
+    {
+        "fecha": "Wed Dec 04 18:45:34 CET 2024",
+        "producto": {
+            "precio": 5,
+            "nombre": "Rosa negra"
+        }
+    },
+    {
+        "fecha": "Wed Dec 04 18:45:37 CET 2024",
+        "producto": {
+            "precio": 1.7,
+            "nombre": "Violeta africana"
+        }
+    }
+]
