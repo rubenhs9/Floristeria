@@ -12,10 +12,12 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.text.ParseException;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import javax.swing.DefaultListModel;
-import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
@@ -137,7 +139,7 @@ public class panelAgregarAlStock extends javax.swing.JPanel {
             @Override
             public void focusGained(FocusEvent e) {
                 if (searchField.getText().equals(" Escribe aqui")) {
-                    searchField.setText(" ");
+                    searchField.setText("");
                     searchField.setForeground(Color.BLACK);
                 }
             }
@@ -237,6 +239,11 @@ public class panelAgregarAlStock extends javax.swing.JPanel {
 
                 @Override
                 public void mouseClicked(MouseEvent e) {
+                    try {
+                        stockSpinner.commitEdit();
+                    } catch (ParseException ex) {
+                        Logger.getLogger(panelAgregarAlStock.class.getName()).log(Level.SEVERE, null, ex);
+                    }
                     int nuevoStock = (int) stockSpinner.getValue();
                     producto.setStock(nuevoStock);
     //                floristeriaApp.actualizarProducto(producto);
