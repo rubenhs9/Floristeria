@@ -43,6 +43,11 @@ public class FloristeriaApp {
         return null;
     }
 
+    public ArrayList<Venta> getVentas() {
+        return ventas;
+    }
+    
+    
     public void venderProducto(String nombre, int cantidad) throws Exception {
         Producto producto = buscarProductoPorNombre(nombre);
         if (producto == null) {

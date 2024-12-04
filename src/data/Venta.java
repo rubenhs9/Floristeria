@@ -23,5 +23,16 @@ public class Venta {
     public Date getFecha() {
         return fecha;
     }
+
+    public Producto getProducto() {
+        return producto;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    
+    
     
 }

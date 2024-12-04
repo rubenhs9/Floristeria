@@ -1,4 +1,3 @@
-
 package GUI;
 
 
@@ -9,14 +8,12 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
-import java.awt.Graphics;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Image;
 import java.awt.Insets;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -144,7 +141,6 @@ public class panelOpciones extends javax.swing.JPanel {
             public void mouseClicked(MouseEvent e) {
                 panelAddProductos panelAddProductos = new panelAddProductos(panelPrincipal,panelOpciones.this, floristeriaApp, colorPrimario);
                 panelPrincipal.remove(panelOpciones.this);
-                System.out.println("Eliminando panel: panelOpciones ");
                 panelPrincipal.add(panelAddProductos, BorderLayout.CENTER);
                 panelPrincipal.revalidate();
                 panelPrincipal.repaint();
