@@ -24,8 +24,6 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import javax.swing.SwingConstants;
-import javax.swing.border.Border;
 
 public class panelAddProductos extends javax.swing.JPanel {
     
@@ -181,7 +179,7 @@ public class panelAddProductos extends javax.swing.JPanel {
     });
 
     // FILA 5: COLOR / TAMAÑO
-    JLabel cambiante = new JLabel("Color: ");
+    cambiante = new JLabel("Color: ");
     cambiante.setFont(new Font("Microsoft YaHei UI", Font.BOLD, 25));
     gbc.gridx = 0;
     gbc.gridy = 4;
