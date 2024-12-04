@@ -1,8 +1,10 @@
 
 package data;
 
+import java.io.Serializable;
 
-public class Planta extends Producto{
+
+public class Planta extends Producto implements Serializable{
     
     private String tamaño;
 

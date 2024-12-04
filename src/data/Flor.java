@@ -1,8 +1,10 @@
 
 package data;
 
+import java.io.Serializable;
 
-public class Flor extends Producto{
+
+public class Flor extends Producto implements Serializable{
     
     private String color;
 

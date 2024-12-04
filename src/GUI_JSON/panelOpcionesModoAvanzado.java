@@ -14,7 +14,11 @@ import java.awt.Image;
 import java.awt.Insets;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
@@ -27,6 +31,8 @@ public class panelOpcionesModoAvanzado extends javax.swing.JPanel {
     private JPanel panelOpciones;
     private FloristeriaApp floristeriaApp;
     private GridBagConstraints gbc;
+    private guardarDatos guardarDatos;
+    private guardarDatosJSON guardarDatosJSON;
     private boolean datosImportados = false;
     private Image backgroundImage;
     
@@ -35,6 +41,8 @@ public class panelOpcionesModoAvanzado extends javax.swing.JPanel {
         this.panelOpciones = panelOpciones;
         this.floristeriaApp = floristeriaApp;
         this.colorPrimario = colorPrimario;
+        this.guardarDatos = new guardarDatos();
+        this.guardarDatosJSON = new guardarDatosJSON();
         this.setLayout(new BorderLayout());
         
 //        ImageIcon imagen = new ImageIcon(campeonato.getBackground());
@@ -133,16 +141,12 @@ public class panelOpcionesModoAvanzado extends javax.swing.JPanel {
         primerBoton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-//                if (!datosImportados) {
-//                    JOptionPane.showMessageDialog(null, "¡Por favor, importe el archivo XML primero!");
-//                    return;
-//                }
-//                panelRealizarBusquedas panelRealizarBusquedas = new panelRealizarBusquedas(panelPrincipal,panelOpcionesModoAvanzado.this, campeonato, colorPrimario,xp);
-//                panelPrincipal.remove(panelOpcionesModoAvanzado.this);
-//                panelPrincipal.add(panelRealizarBusquedas, BorderLayout.CENTER);
-//                panelPrincipal.revalidate();
-//                panelPrincipal.repaint();
-//                primerBoton.setBackground(colorPrimario);
+                try {
+                    guardarDatos.guardarVentas(floristeriaApp.getVentas());
+                    guardarDatos.guardarProducto(floristeriaApp.obtenerProductos());
+                } catch (IOException ex) {
+                    Logger.getLogger(panelOpcionesModoAvanzado.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
 
             @Override
@@ -172,8 +176,12 @@ public class panelOpcionesModoAvanzado extends javax.swing.JPanel {
         segundoBoton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-//                XMLExporter exporter = new XMLExporter();
-//                exporter.exportarCampeonato(campeonato, "res\\storage\\campeonato2024.xml");
+                try{
+                    guardarDatosJSON.guardarVentas(floristeriaApp.getVentas());
+                    guardarDatosJSON.guardarProductos(floristeriaApp.obtenerProductos());
+                }catch(IOException ex){
+                     Logger.getLogger(panelOpcionesModoAvanzado.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
 
             @Override

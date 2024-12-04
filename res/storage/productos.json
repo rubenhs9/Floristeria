@@ -1,0 +1,162 @@
+[
+    {
+        "precio": 1.5,
+        "nombre": "Rosa roja"
+    },
+    {
+        "precio": 2,
+        "nombre": "Tulipán amarillo"
+    },
+    {
+        "precio": 1,
+        "nombre": "Margarita blanca"
+    },
+    {
+        "precio": 3,
+        "nombre": "Lirio morado"
+    },
+    {
+        "precio": 1.8,
+        "nombre": "Clavel rosado"
+    },
+    {
+        "precio": 1.6,
+        "nombre": "Rosa amarilla"
+    },
+    {
+        "precio": 2.8,
+        "nombre": "Peonía blanca"
+    },
+    {
+        "precio": 2.2,
+        "nombre": "Girasol"
+    },
+    {
+        "precio": 3.5,
+        "nombre": "Hortensia azul"
+    },
+    {
+        "precio": 1.9,
+        "nombre": "Gladiolo naranja"
+    },
+    {
+        "precio": 5,
+        "nombre": "Rosa negra"
+    },
+    {
+        "precio": 1.4,
+        "nombre": "Clavel amarillo"
+    },
+    {
+        "precio": 18,
+        "nombre": "Orquídea blanca"
+    },
+    {
+        "precio": 2.3,
+        "nombre": "Narciso"
+    },
+    {
+        "precio": 1.7,
+        "nombre": "Violeta africana"
+    },
+    {
+        "precio": 5,
+        "nombre": "Cactus pequeño"
+    },
+    {
+        "precio": 7.5,
+        "nombre": "Helecho"
+    },
+    {
+        "precio": 25,
+        "nombre": "Bonsái"
+    },
+    {
+        "precio": 15,
+        "nombre": "Orquídea azul"
+    },
+    {
+        "precio": 20,
+        "nombre": "Palma areca"
+    },
+    {
+        "precio": 12,
+        "nombre": "Cactus grande"
+    },
+    {
+        "precio": 30,
+        "nombre": "Palo de agua"
+    },
+    {
+        "precio": 10,
+        "nombre": "Sansevieria"
+    },
+    {
+        "precio": 8.5,
+        "nombre": "Hiedra trepadora"
+    },
+    {
+        "precio": 6.5,
+        "nombre": "Planta araña"
+    },
+    {
+        "precio": 25,
+        "nombre": "Palma kentia"
+    },
+    {
+        "precio": 20,
+        "nombre": "Drácena"
+    },
+    {
+        "precio": 15,
+        "nombre": "Planta ZZ"
+    },
+    {
+        "precio": 5.5,
+        "nombre": "Bamboo de la suerte"
+    },
+    {
+        "precio": 12.5,
+        "nombre": "Crotón"
+    },
+    {
+        "precio": 1.7,
+        "nombre": "Rosa blanca"
+    },
+    {
+        "precio": 1.5,
+        "nombre": "Clavel rojo"
+    },
+    {
+        "precio": 2.5,
+        "nombre": "Tulipán rosado"
+    },
+    {
+        "precio": 2,
+        "nombre": "Jazmín"
+    },
+    {
+        "precio": 1.8,
+        "nombre": "Geranio rojo"
+    },
+    {
+        "precio": 3.5,
+        "nombre": "Suculenta"
+    },
+    {
+        "precio": 6,
+        "nombre": "Lavanda"
+    },
+    {
+        "precio": 18,
+        "nombre": "Ficus"
+    },
+    {
+        "precio": 12,
+        "nombre": "Potos"
+    },
+    {
+        "precio": 8,
+        "nombre": "Aloe vera"
+    }
+]
