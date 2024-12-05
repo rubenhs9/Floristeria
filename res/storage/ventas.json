@@ -38,5 +38,285 @@
             "nombre": "Jazmín"
         },
         "cantidad": 1
+    },
+    {
+        "fecha": "Thu Dec 05 01:22:40 CET 2024",
+        "producto": {
+            "precio": 1,
+            "nombre": "Margarita blanca"
+        },
+        "cantidad": 10
+    },
+    {
+        "fecha": "Thu Dec 05 01:22:43 CET 2024",
+        "producto": {
+            "precio": 3,
+            "nombre": "Lirio morado"
+        },
+        "cantidad": 4
+    },
+    {
+        "fecha": "Thu Dec 05 01:22:46 CET 2024",
+        "producto": {
+            "precio": 1.8,
+            "nombre": "Clavel rosado"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 01:24:11 CET 2024",
+        "producto": {
+            "precio": 25.05,
+            "nombre": "PROBANDO"
+        },
+        "cantidad": 7
+    },
+    {
+        "fecha": "Thu Dec 05 03:05:49 CET 2024",
+        "producto": {
+            "precio": 2,
+            "nombre": "Tulipán amarillo"
+        },
+        "cantidad": 15
+    },
+    {
+        "fecha": "Thu Dec 05 03:05:59 CET 2024",
+        "producto": {
+            "precio": 5,
+            "nombre": "Rosa negra"
+        },
+        "cantidad": 2
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:19 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:20 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:20 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:20 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:20 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:20 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:21 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:21 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:33 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:34 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:34 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:34 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:34 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:34 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:34 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:35 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:35 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:35 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:35 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:35 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:35 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:35 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:36 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:36 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:44 CET 2024",
+        "producto": {
+            "precio": 1.9,
+            "nombre": "Gladiolo naranja"
+        },
+        "cantidad": 9
+    },
+    {
+        "fecha": "Thu Dec 05 03:15:51 CET 2024",
+        "producto": {
+            "precio": 8,
+            "nombre": "Aloe vera"
+        },
+        "cantidad": 10
+    },
+    {
+        "fecha": "Thu Dec 05 03:16:26 CET 2024",
+        "producto": {
+            "precio": 12,
+            "nombre": "dsada"
+        },
+        "cantidad": 41
+    },
+    {
+        "fecha": "Thu Dec 05 03:16:41 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 10
+    },
+    {
+        "fecha": "Thu Dec 05 03:17:09 CET 2024",
+        "producto": {
+            "precio": 1.14,
+            "nombre": "se borra o no"
+        },
+        "cantidad": 9
     }
 ]

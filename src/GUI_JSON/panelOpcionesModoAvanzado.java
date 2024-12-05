@@ -8,6 +8,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
+import java.awt.Graphics;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Image;
@@ -17,6 +18,7 @@ import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -36,6 +38,8 @@ public class panelOpcionesModoAvanzado extends javax.swing.JPanel {
     private boolean datosImportados = false;
     private Image backgroundImage;
     
+    private String fondoPantalla = "res/img/panelOpcionesModoAvanzado.jpg";
+    
     public panelOpcionesModoAvanzado(JPanel panelPrincipal, JPanel panelOpciones, FloristeriaApp floristeriaApp, Color colorPrimario) {
         this.panelPrincipal = panelPrincipal;
         this.panelOpciones = panelOpciones;
@@ -45,24 +49,24 @@ public class panelOpcionesModoAvanzado extends javax.swing.JPanel {
         this.guardarDatosJSON = new guardarDatosJSON(floristeriaApp);
         this.setLayout(new BorderLayout());
         
-//        ImageIcon imagen = new ImageIcon(campeonato.getBackground());
-//        backgroundImage = imagen.getImage();
+        ImageIcon imagen = new ImageIcon(fondoPantalla);
+        backgroundImage = imagen.getImage();
 
         botonVolverAtras();
         minitComponents();
     }
     
-//    @Override
-//    protected void paintComponent(Graphics g) {
-//        super.paintComponent(g);
-//
-//        //Dibujo la imagen de fondo
-//        if (backgroundImage != null) {
-//            g.drawImage(backgroundImage, 0, 0, panelPrincipal.getWidth(), panelPrincipal.getHeight(), this);
-//        }else{
-//            System.out.println("No se encontro la imagen");
-//        }
-//    }
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+
+        //Dibujo la imagen de fondo
+        if (backgroundImage != null) {
+            g.drawImage(backgroundImage, 0, 0, panelPrincipal.getWidth(), panelPrincipal.getHeight(), this);
+        }else{
+            System.out.println("No se encontro la imagen");
+        }
+    }
     
 
     private void botonVolverAtras(){
@@ -144,6 +148,7 @@ public class panelOpcionesModoAvanzado extends javax.swing.JPanel {
                 try {
                     guardarDatos.guardarVentas(floristeriaApp.getVentas());
                     guardarDatos.guardarProducto(floristeriaApp.obtenerProductos());
+                    JOptionPane.showMessageDialog(null, "¡Datos guardados en ficheros binarios correctamente!");
                 } catch (IOException ex) {
                     Logger.getLogger(panelOpcionesModoAvanzado.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -179,6 +184,7 @@ public class panelOpcionesModoAvanzado extends javax.swing.JPanel {
                 try{
                     guardarDatosJSON.guardarVentas(floristeriaApp.getVentas());
                     guardarDatosJSON.guardarProductos(floristeriaApp.obtenerProductos());
+                    JOptionPane.showMessageDialog(null, "¡Datos guardados en JSON correctamente!");
                 }catch(IOException ex){
                      Logger.getLogger(panelOpcionesModoAvanzado.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -226,6 +232,7 @@ public class panelOpcionesModoAvanzado extends javax.swing.JPanel {
 //                }catch(Exception ee){
 //                    ee.printStackTrace();
 //                }
+                JOptionPane.showMessageDialog(null, "¡Datos guardados en JSON correctamente!");     
             }
             @Override
             public void mouseEntered(MouseEvent e) {

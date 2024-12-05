@@ -8,12 +8,14 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
+import java.awt.Graphics;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Image;
 import java.awt.Insets;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -29,6 +31,7 @@ public class panelOpciones extends javax.swing.JPanel {
     private JPanel panelPrincipal;
     private FloristeriaApp floristeriaApp;
     private Image backgroundImage;
+    private String fondoPantalla = "res/img/panelOpciones.jpg";
     
     public panelOpciones(JFrame vpal, JPanel panelPrincipal, Color colorPrimario1, FloristeriaApp floristeriaApp) {
         this.vpal = vpal;
@@ -37,27 +40,27 @@ public class panelOpciones extends javax.swing.JPanel {
         this.colorPrimario = colorPrimario1;
         this.setLayout(new BorderLayout());
         this.setOpaque(false);
-//        ImageIcon imagen = new ImageIcon(campeonato.getBackground());
-//        backgroundImage = imagen.getImage();
+        ImageIcon imagen = new ImageIcon(fondoPantalla);
+        backgroundImage = imagen.getImage();
 
         botonModoAvanzado();
         minitComponents();
     }
 
 
-//    @Override
-//    protected void paintComponent(Graphics g) {
-//        super.paintComponent(g);
-//
-//        //Dibujo la imagen de fondo
-//        if (backgroundImage != null) {
-//            g.drawImage(backgroundImage, 0, 0, vpal.getWidth(), vpal.getHeight(), this);
-//            vpal.repaint();
-//            vpal.revalidate();
-//        }else{
-//            System.out.println("No se encontro la imagen");
-//        }
-//    }
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+
+        //Dibujo la imagen de fondo
+        if (backgroundImage != null) {
+            g.drawImage(backgroundImage, 0, 0, vpal.getWidth(), vpal.getHeight(), this);
+            vpal.repaint();
+            vpal.revalidate();
+        }else{
+            System.out.println("No se encontro la imagen");
+        }
+    }
 
     
     private void botonModoAvanzado(){

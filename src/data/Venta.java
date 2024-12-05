@@ -1,10 +1,11 @@
 
 package data;
 
+import java.io.Serializable;
 import java.util.Date;
 
 
-public class Venta {
+public class Venta implements Serializable {
     
     private Producto producto;
     private int cantidad;

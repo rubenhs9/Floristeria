@@ -10,6 +10,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.LinearGradientPaint;
+import java.awt.MediaTracker;
 import java.awt.Paint;
 import java.awt.geom.Rectangle2D;
 import javax.swing.ImageIcon;
@@ -20,9 +21,11 @@ import javax.swing.JPanel;
 public class panelPrincipal extends javax.swing.JPanel {
 
     private Vpal vpal;
-    private String nombreApp = "PRUEBA";
+//    private String nombreApp = "PRUEBA";
     private Color colorPrimario = new Color(15, 135, 44); //Color principal de la app, se puede cambiar si no gusta
     private FloristeriaApp floristeriaApp;
+    private String logo = "res/img/logo.png";
+    
     
     public panelPrincipal(Vpal vpal, FloristeriaApp floristeriaApp) {
         this.vpal = vpal; 
@@ -52,58 +55,72 @@ public class panelPrincipal extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * <b 
+     *               ||Rubén|| 
+     * Buenas Jesús, he añadido imágenes y logos. 
+     * Esta línea es para ajustar la imagen del logo x si no te gusta.
+     * Está en este minitComponents().
+     * 
+     *              double scaleFactor = 2;
+     * 
+     * 
+     */
     private void minitComponents() {
-        //Creo el Jpanel superior que estara en todo momento enseñando el nombre del insituto
-        JPanel panelTituloApp = new JPanel() {
-            @Override
-            protected void paintComponent(Graphics g) {
-                super.paintComponent(g);
+    // Crear el JPanel superior
+    JPanel panelTituloApp = new JPanel() {
+        @Override
+        protected void paintComponent(Graphics g) {
+            super.paintComponent(g);
 
-                Graphics2D g2d = (Graphics2D) g;
-                Color colorInicio = new Color(10, 66, 23); // Negro
-                Color colorFin = new Color(15, 135, 44);  // Granate muy oscuro
+            Graphics2D g2d = (Graphics2D) g;
 
-                Paint degradado = new LinearGradientPaint(
-                    getWidth(), 0, 0, 0, 
-                    new float[] {0.0f, 1.0f}, 
-                    new Color[] {colorFin, colorInicio}
-                );
+            Color colorInicio = new Color(10, 66, 23); 
+            Color colorFin = new Color(15, 135, 44);  
+            Paint degradado = new LinearGradientPaint(
+                0, 0, getWidth(), 0, 
+                new float[] {0.0f, 1.0f}, 
+                new Color[] {colorInicio, colorFin}
+            );
 
-                g2d.setPaint(degradado);
-                g2d.fill(new Rectangle2D.Float(0, 0, getWidth(), getHeight()));
-                
-                // Cargar la imagen que quieres centrar
-//                ImageIcon icon = new ImageIcon(".\\res\\imgInterfaz\\logo.png"); // Ruta de la imagen
-//                Image image = icon.getImage();
-//
-//                // Calcular las coordenadas para centrar la imagen en el panel
-//                int x = (getWidth() - image.getWidth(null)) / 2;
-//                int y = (getHeight() - image.getHeight(null)) / 2;
-//
-//                // Dibujar la imagen centrada
-//                g2d.drawImage(image, x, y, this);
+            g2d.setPaint(degradado);
+            g2d.fill(new Rectangle2D.Float(0, 0, getWidth(), getHeight()));
+
+            ImageIcon icon = new ImageIcon(logo);
+            Image image = icon.getImage();
+
+            if (icon.getImageLoadStatus() != MediaTracker.COMPLETE) {
+                System.out.println("ERROR CARGA IMAGEN");
+                return;
             }
-        };
-        panelTituloApp.setLayout(new FlowLayout());
-//        panelTituloApp.setBackground(colorPrimario);
-        
-        
-        JLabel titulo = new JLabel();
-        titulo.setForeground(Color.WHITE);
-        titulo.setText("| PRUEBA |");
-        titulo.setFont(new Font("Arial",Font.BOLD,70));
-        
-        panelTituloApp.add(titulo);
-        this.add(panelTituloApp, BorderLayout.NORTH);
-        
-        //CREAMOS EL PANEL DE OPCIONES
-//        panelTextArea panelTextArea = new panelTextArea("HOLA",this, colorPrimario);
-//        panelTextArea.cambiarTamñoLetra(20);
-//        this.add(panelTextArea,BorderLayout.CENTER);
 
-        panelOpciones panelOpciones = new panelOpciones(vpal, this, colorPrimario, floristeriaApp);
-        this.add(panelOpciones);
-    }
+            int imageWidth = icon.getIconWidth();
+            int imageHeight = icon.getIconHeight();
+
+            double scaleX = (double) getWidth() / imageWidth;
+            double scaleY = (double) getHeight() / imageHeight;
+            double scale = Math.min(scaleX, scaleY);
+            
+            double scaleFactor = 2; /* → → → ESTO AJUSTA LA ESCALA DE LA FOTO */
+            int newWidth = (int) (imageWidth * scale * scaleFactor);
+            int newHeight = (int) (imageHeight * scale * scaleFactor);
+            
+            int x = (getWidth() - newWidth) / 2;
+            int y = (getHeight() - newHeight) / 2;
+
+            g2d.drawImage(image, x, y, newWidth, newHeight, this);
+        }
+    };
+    
+    panelTituloApp.setPreferredSize(new java.awt.Dimension(0, 150)); 
+    panelTituloApp.setLayout(new FlowLayout());
+
+    this.add(panelTituloApp, BorderLayout.NORTH);
+
+    panelOpciones panelOpciones = new panelOpciones(vpal, this, colorPrimario, floristeriaApp);
+    this.add(panelOpciones, BorderLayout.CENTER);
+}
+
 
 
 
