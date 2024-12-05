@@ -334,5 +334,29 @@
             "nombre": "PROBANDO 3"
         },
         "cantidad": 0
+    },
+    {
+        "fecha": "Thu Dec 05 03:45:11 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 8
+    },
+    {
+        "fecha": "Thu Dec 05 03:50:35 CET 2024",
+        "producto": {
+            "precio": 25.05,
+            "nombre": "PROBANDO"
+        },
+        "cantidad": 20
+    },
+    {
+        "fecha": "Thu Dec 05 03:54:13 CET 2024",
+        "producto": {
+            "precio": 2,
+            "nombre": "Jazmín"
+        },
+        "cantidad": 3
     }
 ]

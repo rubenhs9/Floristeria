@@ -223,21 +223,12 @@ public class panelOpcionesModoAvanzado extends javax.swing.JPanel {
         tercerBoton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-//                try {
-//                    //Cargar el archivo XML
-//                    XmlParser parser = new XmlParser(".\\res\\storage\\___dalesEsteArch__ridersMotoGP.xml");
-//                    Document document = parser.getDocument();
-//                    campeonato.setDocumentoXML2012(document);
-//                    xp = new XPathQueries(document);
-////                    xp.ejecutarConsultas();
-//                    datosImportados = true;
-//                    if (datosImportados) {
-//                        JOptionPane.showMessageDialog(null, "¡Datos importados con exito!");
-//                    }
-//                }catch(Exception ee){
-//                    ee.printStackTrace();
-//                }
-                JOptionPane.showMessageDialog(null, "¡Datos guardados en JSON correctamente!");     
+                try { 
+                    guardarDatosJSON.cargarProductos();
+                    JOptionPane.showMessageDialog(null, "¡Datos cargados de JSON correctamente!");     
+                } catch (IOException ex) {
+                    Logger.getLogger(panelOpcionesModoAvanzado.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
             @Override
             public void mouseEntered(MouseEvent e) {

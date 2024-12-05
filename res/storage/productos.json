@@ -200,6 +200,270 @@
     {
         "precio": 2,
         "color": "Blanco",
+        "stock": 4,
+        "nombre": "Jazmín"
+    },
+    {
+        "precio": 1.8,
+        "color": "Rojo",
+        "stock": 14,
+        "nombre": "Geranio rojo"
+    },
+    {
+        "precio": 3.5,
+        "tamaño": "15x20",
+        "stock": 20,
+        "nombre": "Suculenta"
+    },
+    {
+        "precio": 6,
+        "tamaño": "30x50",
+        "stock": 9,
+        "nombre": "Lavanda"
+    },
+    {
+        "precio": 18,
+        "tamaño": "120x180",
+        "stock": 5,
+        "nombre": "Ficus"
+    },
+    {
+        "precio": 12,
+        "tamaño": "100x150",
+        "stock": 11,
+        "nombre": "Potos"
+    },
+    {
+        "precio": 8,
+        "tamaño": "40x60",
+        "stock": 0,
+        "nombre": "Aloe vera"
+    },
+    {
+        "precio": 25.05,
+        "color": "Rosa",
+        "stock": 0,
+        "nombre": "PROBANDO"
+    },
+    {
+        "precio": 12,
+        "color": "sda",
+        "stock": 4,
+        "nombre": "dsada"
+    },
+    {
+        "precio": 15.2,
+        "color": "Naranja",
+        "stock": 5,
+        "nombre": "PROBANDO 3"
+    },
+    {
+        "precio": 1.14,
+        "color": "Marrón",
+        "stock": 10,
+        "nombre": "se borra o no"
+    },
+    {
+        "precio": 1.5,
+        "color": "Rojo",
+        "stock": 1,
+        "nombre": "Rosa roja"
+    },
+    {
+        "precio": 2,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Tulipán amarillo"
+    },
+    {
+        "precio": 1,
+        "color": "Blanco",
+        "stock": 0,
+        "nombre": "Margarita blanca"
+    },
+    {
+        "precio": 3,
+        "color": "Morado",
+        "stock": 0,
+        "nombre": "Lirio morado"
+    },
+    {
+        "precio": 1.8,
+        "color": "Rosado",
+        "stock": 0,
+        "nombre": "Clavel rosado"
+    },
+    {
+        "precio": 1.6,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Rosa amarilla"
+    },
+    {
+        "precio": 2.8,
+        "color": "Blanco",
+        "stock": 9,
+        "nombre": "Peonía blanca"
+    },
+    {
+        "precio": 2.2,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Girasol"
+    },
+    {
+        "precio": 3.5,
+        "color": "Azul",
+        "stock": 5,
+        "nombre": "Hortensia azul"
+    },
+    {
+        "precio": 1.9,
+        "color": "Naranja",
+        "stock": 0,
+        "nombre": "Gladiolo naranja"
+    },
+    {
+        "precio": 5,
+        "color": "Negro",
+        "stock": 8,
+        "nombre": "Rosa negra"
+    },
+    {
+        "precio": 1.4,
+        "color": "Amarillo",
+        "stock": 49,
+        "nombre": "Clavel amarillo"
+    },
+    {
+        "precio": 18,
+        "color": "Blanco",
+        "stock": 5,
+        "nombre": "Orquídea blanca"
+    },
+    {
+        "precio": 2.3,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Narciso"
+    },
+    {
+        "precio": 1.7,
+        "color": "Morado",
+        "stock": 0,
+        "nombre": "Violeta africana"
+    },
+    {
+        "precio": 5,
+        "tamaño": "50x100",
+        "stock": 12,
+        "nombre": "Cactus pequeño"
+    },
+    {
+        "precio": 7.5,
+        "tamaño": "60x80",
+        "stock": 6,
+        "nombre": "Helecho"
+    },
+    {
+        "precio": 25,
+        "tamaño": "30x50",
+        "stock": 4,
+        "nombre": "Bonsái"
+    },
+    {
+        "precio": 15,
+        "tamaño": "40x60",
+        "stock": 6,
+        "nombre": "Orquídea azul"
+    },
+    {
+        "precio": 20,
+        "tamaño": "150x200",
+        "stock": 10,
+        "nombre": "Palma areca"
+    },
+    {
+        "precio": 12,
+        "tamaño": "70x120",
+        "stock": 6,
+        "nombre": "Cactus grande"
+    },
+    {
+        "precio": 30,
+        "tamaño": "150x200",
+        "stock": 0,
+        "nombre": "Palo de agua"
+    },
+    {
+        "precio": 10,
+        "tamaño": "100x150",
+        "stock": 12,
+        "nombre": "Sansevieria"
+    },
+    {
+        "precio": 8.5,
+        "tamaño": "200x300",
+        "stock": 15,
+        "nombre": "Hiedra trepadora"
+    },
+    {
+        "precio": 6.5,
+        "tamaño": "50x70",
+        "stock": 18,
+        "nombre": "Planta araña"
+    },
+    {
+        "precio": 25,
+        "tamaño": "120x180",
+        "stock": 8,
+        "nombre": "Palma kentia"
+    },
+    {
+        "precio": 20,
+        "tamaño": "150x200",
+        "stock": 7,
+        "nombre": "Drácena"
+    },
+    {
+        "precio": 15,
+        "tamaño": "100x150",
+        "stock": 10,
+        "nombre": "Planta ZZ"
+    },
+    {
+        "precio": 5.5,
+        "tamaño": "50x100",
+        "stock": 25,
+        "nombre": "Bamboo de la suerte"
+    },
+    {
+        "precio": 12.5,
+        "tamaño": "80x120",
+        "stock": 6,
+        "nombre": "Crotón"
+    },
+    {
+        "precio": 1.7,
+        "color": "Blanco",
+        "stock": 18,
+        "nombre": "Rosa blanca"
+    },
+    {
+        "precio": 1.5,
+        "color": "Rojo",
+        "stock": 25,
+        "nombre": "Clavel rojo"
+    },
+    {
+        "precio": 2.5,
+        "color": "Rosado",
+        "stock": 0,
+        "nombre": "Tulipán rosado"
+    },
+    {
+        "precio": 2,
+        "color": "Blanco",
         "stock": 7,
         "nombre": "Jazmín"
     },
@@ -262,5 +526,1583 @@
         "color": "Marrón",
         "stock": 3,
         "nombre": "se borra o no"
+    },
+    {
+        "precio": 1.5,
+        "color": "Rojo",
+        "stock": 1,
+        "nombre": "Rosa roja"
+    },
+    {
+        "precio": 2,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Tulipán amarillo"
+    },
+    {
+        "precio": 1,
+        "color": "Blanco",
+        "stock": 0,
+        "nombre": "Margarita blanca"
+    },
+    {
+        "precio": 3,
+        "color": "Morado",
+        "stock": 0,
+        "nombre": "Lirio morado"
+    },
+    {
+        "precio": 1.8,
+        "color": "Rosado",
+        "stock": 0,
+        "nombre": "Clavel rosado"
+    },
+    {
+        "precio": 1.6,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Rosa amarilla"
+    },
+    {
+        "precio": 2.8,
+        "color": "Blanco",
+        "stock": 9,
+        "nombre": "Peonía blanca"
+    },
+    {
+        "precio": 2.2,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Girasol"
+    },
+    {
+        "precio": 3.5,
+        "color": "Azul",
+        "stock": 5,
+        "nombre": "Hortensia azul"
+    },
+    {
+        "precio": 1.9,
+        "color": "Naranja",
+        "stock": 0,
+        "nombre": "Gladiolo naranja"
+    },
+    {
+        "precio": 5,
+        "color": "Negro",
+        "stock": 8,
+        "nombre": "Rosa negra"
+    },
+    {
+        "precio": 1.4,
+        "color": "Amarillo",
+        "stock": 49,
+        "nombre": "Clavel amarillo"
+    },
+    {
+        "precio": 18,
+        "color": "Blanco",
+        "stock": 5,
+        "nombre": "Orquídea blanca"
+    },
+    {
+        "precio": 2.3,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Narciso"
+    },
+    {
+        "precio": 1.7,
+        "color": "Morado",
+        "stock": 0,
+        "nombre": "Violeta africana"
+    },
+    {
+        "precio": 5,
+        "tamaño": "50x100",
+        "stock": 12,
+        "nombre": "Cactus pequeño"
+    },
+    {
+        "precio": 7.5,
+        "tamaño": "60x80",
+        "stock": 6,
+        "nombre": "Helecho"
+    },
+    {
+        "precio": 25,
+        "tamaño": "30x50",
+        "stock": 4,
+        "nombre": "Bonsái"
+    },
+    {
+        "precio": 15,
+        "tamaño": "40x60",
+        "stock": 6,
+        "nombre": "Orquídea azul"
+    },
+    {
+        "precio": 20,
+        "tamaño": "150x200",
+        "stock": 10,
+        "nombre": "Palma areca"
+    },
+    {
+        "precio": 12,
+        "tamaño": "70x120",
+        "stock": 6,
+        "nombre": "Cactus grande"
+    },
+    {
+        "precio": 30,
+        "tamaño": "150x200",
+        "stock": 0,
+        "nombre": "Palo de agua"
+    },
+    {
+        "precio": 10,
+        "tamaño": "100x150",
+        "stock": 12,
+        "nombre": "Sansevieria"
+    },
+    {
+        "precio": 8.5,
+        "tamaño": "200x300",
+        "stock": 15,
+        "nombre": "Hiedra trepadora"
+    },
+    {
+        "precio": 6.5,
+        "tamaño": "50x70",
+        "stock": 18,
+        "nombre": "Planta araña"
+    },
+    {
+        "precio": 25,
+        "tamaño": "120x180",
+        "stock": 8,
+        "nombre": "Palma kentia"
+    },
+    {
+        "precio": 20,
+        "tamaño": "150x200",
+        "stock": 7,
+        "nombre": "Drácena"
+    },
+    {
+        "precio": 15,
+        "tamaño": "100x150",
+        "stock": 10,
+        "nombre": "Planta ZZ"
+    },
+    {
+        "precio": 5.5,
+        "tamaño": "50x100",
+        "stock": 25,
+        "nombre": "Bamboo de la suerte"
+    },
+    {
+        "precio": 12.5,
+        "tamaño": "80x120",
+        "stock": 6,
+        "nombre": "Crotón"
+    },
+    {
+        "precio": 1.7,
+        "color": "Blanco",
+        "stock": 18,
+        "nombre": "Rosa blanca"
+    },
+    {
+        "precio": 1.5,
+        "color": "Rojo",
+        "stock": 25,
+        "nombre": "Clavel rojo"
+    },
+    {
+        "precio": 2.5,
+        "color": "Rosado",
+        "stock": 0,
+        "nombre": "Tulipán rosado"
+    },
+    {
+        "precio": 2,
+        "color": "Blanco",
+        "stock": 7,
+        "nombre": "Jazmín"
+    },
+    {
+        "precio": 1.8,
+        "color": "Rojo",
+        "stock": 14,
+        "nombre": "Geranio rojo"
+    },
+    {
+        "precio": 3.5,
+        "tamaño": "15x20",
+        "stock": 20,
+        "nombre": "Suculenta"
+    },
+    {
+        "precio": 6,
+        "tamaño": "30x50",
+        "stock": 9,
+        "nombre": "Lavanda"
+    },
+    {
+        "precio": 18,
+        "tamaño": "120x180",
+        "stock": 5,
+        "nombre": "Ficus"
+    },
+    {
+        "precio": 12,
+        "tamaño": "100x150",
+        "stock": 11,
+        "nombre": "Potos"
+    },
+    {
+        "precio": 8,
+        "tamaño": "40x60",
+        "stock": 0,
+        "nombre": "Aloe vera"
+    },
+    {
+        "precio": 25.05,
+        "color": "Rosa",
+        "stock": 20,
+        "nombre": "PROBANDO"
+    },
+    {
+        "precio": 12,
+        "color": "sda",
+        "stock": 4,
+        "nombre": "dsada"
+    },
+    {
+        "precio": 15.2,
+        "color": "Naranja",
+        "stock": 13,
+        "nombre": "PROBANDO 3"
+    },
+    {
+        "precio": 1.14,
+        "color": "Marrón",
+        "stock": 3,
+        "nombre": "se borra o no"
+    },
+    {
+        "precio": 1.5,
+        "color": "Rojo",
+        "stock": 1,
+        "nombre": "Rosa roja"
+    },
+    {
+        "precio": 2,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Tulipán amarillo"
+    },
+    {
+        "precio": 1,
+        "color": "Blanco",
+        "stock": 0,
+        "nombre": "Margarita blanca"
+    },
+    {
+        "precio": 3,
+        "color": "Morado",
+        "stock": 0,
+        "nombre": "Lirio morado"
+    },
+    {
+        "precio": 1.8,
+        "color": "Rosado",
+        "stock": 0,
+        "nombre": "Clavel rosado"
+    },
+    {
+        "precio": 1.6,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Rosa amarilla"
+    },
+    {
+        "precio": 2.8,
+        "color": "Blanco",
+        "stock": 9,
+        "nombre": "Peonía blanca"
+    },
+    {
+        "precio": 2.2,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Girasol"
+    },
+    {
+        "precio": 3.5,
+        "color": "Azul",
+        "stock": 5,
+        "nombre": "Hortensia azul"
+    },
+    {
+        "precio": 1.9,
+        "color": "Naranja",
+        "stock": 0,
+        "nombre": "Gladiolo naranja"
+    },
+    {
+        "precio": 5,
+        "color": "Negro",
+        "stock": 8,
+        "nombre": "Rosa negra"
+    },
+    {
+        "precio": 1.4,
+        "color": "Amarillo",
+        "stock": 49,
+        "nombre": "Clavel amarillo"
+    },
+    {
+        "precio": 18,
+        "color": "Blanco",
+        "stock": 5,
+        "nombre": "Orquídea blanca"
+    },
+    {
+        "precio": 2.3,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Narciso"
+    },
+    {
+        "precio": 1.7,
+        "color": "Morado",
+        "stock": 0,
+        "nombre": "Violeta africana"
+    },
+    {
+        "precio": 5,
+        "tamaño": "50x100",
+        "stock": 12,
+        "nombre": "Cactus pequeño"
+    },
+    {
+        "precio": 7.5,
+        "tamaño": "60x80",
+        "stock": 6,
+        "nombre": "Helecho"
+    },
+    {
+        "precio": 25,
+        "tamaño": "30x50",
+        "stock": 4,
+        "nombre": "Bonsái"
+    },
+    {
+        "precio": 15,
+        "tamaño": "40x60",
+        "stock": 6,
+        "nombre": "Orquídea azul"
+    },
+    {
+        "precio": 20,
+        "tamaño": "150x200",
+        "stock": 10,
+        "nombre": "Palma areca"
+    },
+    {
+        "precio": 12,
+        "tamaño": "70x120",
+        "stock": 6,
+        "nombre": "Cactus grande"
+    },
+    {
+        "precio": 30,
+        "tamaño": "150x200",
+        "stock": 0,
+        "nombre": "Palo de agua"
+    },
+    {
+        "precio": 10,
+        "tamaño": "100x150",
+        "stock": 12,
+        "nombre": "Sansevieria"
+    },
+    {
+        "precio": 8.5,
+        "tamaño": "200x300",
+        "stock": 15,
+        "nombre": "Hiedra trepadora"
+    },
+    {
+        "precio": 6.5,
+        "tamaño": "50x70",
+        "stock": 18,
+        "nombre": "Planta araña"
+    },
+    {
+        "precio": 25,
+        "tamaño": "120x180",
+        "stock": 8,
+        "nombre": "Palma kentia"
+    },
+    {
+        "precio": 20,
+        "tamaño": "150x200",
+        "stock": 7,
+        "nombre": "Drácena"
+    },
+    {
+        "precio": 15,
+        "tamaño": "100x150",
+        "stock": 10,
+        "nombre": "Planta ZZ"
+    },
+    {
+        "precio": 5.5,
+        "tamaño": "50x100",
+        "stock": 25,
+        "nombre": "Bamboo de la suerte"
+    },
+    {
+        "precio": 12.5,
+        "tamaño": "80x120",
+        "stock": 6,
+        "nombre": "Crotón"
+    },
+    {
+        "precio": 1.7,
+        "color": "Blanco",
+        "stock": 18,
+        "nombre": "Rosa blanca"
+    },
+    {
+        "precio": 1.5,
+        "color": "Rojo",
+        "stock": 25,
+        "nombre": "Clavel rojo"
+    },
+    {
+        "precio": 2.5,
+        "color": "Rosado",
+        "stock": 0,
+        "nombre": "Tulipán rosado"
+    },
+    {
+        "precio": 2,
+        "color": "Blanco",
+        "stock": 7,
+        "nombre": "Jazmín"
+    },
+    {
+        "precio": 1.8,
+        "color": "Rojo",
+        "stock": 14,
+        "nombre": "Geranio rojo"
+    },
+    {
+        "precio": 3.5,
+        "tamaño": "15x20",
+        "stock": 20,
+        "nombre": "Suculenta"
+    },
+    {
+        "precio": 6,
+        "tamaño": "30x50",
+        "stock": 9,
+        "nombre": "Lavanda"
+    },
+    {
+        "precio": 18,
+        "tamaño": "120x180",
+        "stock": 5,
+        "nombre": "Ficus"
+    },
+    {
+        "precio": 12,
+        "tamaño": "100x150",
+        "stock": 11,
+        "nombre": "Potos"
+    },
+    {
+        "precio": 8,
+        "tamaño": "40x60",
+        "stock": 0,
+        "nombre": "Aloe vera"
+    },
+    {
+        "precio": 25.05,
+        "color": "Rosa",
+        "stock": 20,
+        "nombre": "PROBANDO"
+    },
+    {
+        "precio": 12,
+        "color": "sda",
+        "stock": 4,
+        "nombre": "dsada"
+    },
+    {
+        "precio": 15.2,
+        "color": "Naranja",
+        "stock": 13,
+        "nombre": "PROBANDO 3"
+    },
+    {
+        "precio": 1.5,
+        "color": "Rojo",
+        "stock": 1,
+        "nombre": "Rosa roja"
+    },
+    {
+        "precio": 2,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Tulipán amarillo"
+    },
+    {
+        "precio": 1,
+        "color": "Blanco",
+        "stock": 0,
+        "nombre": "Margarita blanca"
+    },
+    {
+        "precio": 3,
+        "color": "Morado",
+        "stock": 0,
+        "nombre": "Lirio morado"
+    },
+    {
+        "precio": 1.8,
+        "color": "Rosado",
+        "stock": 0,
+        "nombre": "Clavel rosado"
+    },
+    {
+        "precio": 1.6,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Rosa amarilla"
+    },
+    {
+        "precio": 2.8,
+        "color": "Blanco",
+        "stock": 9,
+        "nombre": "Peonía blanca"
+    },
+    {
+        "precio": 2.2,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Girasol"
+    },
+    {
+        "precio": 3.5,
+        "color": "Azul",
+        "stock": 5,
+        "nombre": "Hortensia azul"
+    },
+    {
+        "precio": 1.9,
+        "color": "Naranja",
+        "stock": 0,
+        "nombre": "Gladiolo naranja"
+    },
+    {
+        "precio": 5,
+        "color": "Negro",
+        "stock": 8,
+        "nombre": "Rosa negra"
+    },
+    {
+        "precio": 1.4,
+        "color": "Amarillo",
+        "stock": 49,
+        "nombre": "Clavel amarillo"
+    },
+    {
+        "precio": 18,
+        "color": "Blanco",
+        "stock": 5,
+        "nombre": "Orquídea blanca"
+    },
+    {
+        "precio": 2.3,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Narciso"
+    },
+    {
+        "precio": 1.7,
+        "color": "Morado",
+        "stock": 0,
+        "nombre": "Violeta africana"
+    },
+    {
+        "precio": 5,
+        "tamaño": "50x100",
+        "stock": 12,
+        "nombre": "Cactus pequeño"
+    },
+    {
+        "precio": 7.5,
+        "tamaño": "60x80",
+        "stock": 6,
+        "nombre": "Helecho"
+    },
+    {
+        "precio": 25,
+        "tamaño": "30x50",
+        "stock": 4,
+        "nombre": "Bonsái"
+    },
+    {
+        "precio": 15,
+        "tamaño": "40x60",
+        "stock": 6,
+        "nombre": "Orquídea azul"
+    },
+    {
+        "precio": 20,
+        "tamaño": "150x200",
+        "stock": 10,
+        "nombre": "Palma areca"
+    },
+    {
+        "precio": 12,
+        "tamaño": "70x120",
+        "stock": 6,
+        "nombre": "Cactus grande"
+    },
+    {
+        "precio": 30,
+        "tamaño": "150x200",
+        "stock": 0,
+        "nombre": "Palo de agua"
+    },
+    {
+        "precio": 10,
+        "tamaño": "100x150",
+        "stock": 12,
+        "nombre": "Sansevieria"
+    },
+    {
+        "precio": 8.5,
+        "tamaño": "200x300",
+        "stock": 15,
+        "nombre": "Hiedra trepadora"
+    },
+    {
+        "precio": 6.5,
+        "tamaño": "50x70",
+        "stock": 18,
+        "nombre": "Planta araña"
+    },
+    {
+        "precio": 25,
+        "tamaño": "120x180",
+        "stock": 8,
+        "nombre": "Palma kentia"
+    },
+    {
+        "precio": 20,
+        "tamaño": "150x200",
+        "stock": 7,
+        "nombre": "Drácena"
+    },
+    {
+        "precio": 15,
+        "tamaño": "100x150",
+        "stock": 10,
+        "nombre": "Planta ZZ"
+    },
+    {
+        "precio": 5.5,
+        "tamaño": "50x100",
+        "stock": 25,
+        "nombre": "Bamboo de la suerte"
+    },
+    {
+        "precio": 12.5,
+        "tamaño": "80x120",
+        "stock": 6,
+        "nombre": "Crotón"
+    },
+    {
+        "precio": 1.7,
+        "color": "Blanco",
+        "stock": 18,
+        "nombre": "Rosa blanca"
+    },
+    {
+        "precio": 1.5,
+        "color": "Rojo",
+        "stock": 25,
+        "nombre": "Clavel rojo"
+    },
+    {
+        "precio": 2.5,
+        "color": "Rosado",
+        "stock": 0,
+        "nombre": "Tulipán rosado"
+    },
+    {
+        "precio": 2,
+        "color": "Blanco",
+        "stock": 7,
+        "nombre": "Jazmín"
+    },
+    {
+        "precio": 1.8,
+        "color": "Rojo",
+        "stock": 14,
+        "nombre": "Geranio rojo"
+    },
+    {
+        "precio": 3.5,
+        "tamaño": "15x20",
+        "stock": 20,
+        "nombre": "Suculenta"
+    },
+    {
+        "precio": 6,
+        "tamaño": "30x50",
+        "stock": 9,
+        "nombre": "Lavanda"
+    },
+    {
+        "precio": 18,
+        "tamaño": "120x180",
+        "stock": 5,
+        "nombre": "Ficus"
+    },
+    {
+        "precio": 12,
+        "tamaño": "100x150",
+        "stock": 11,
+        "nombre": "Potos"
+    },
+    {
+        "precio": 8,
+        "tamaño": "40x60",
+        "stock": 0,
+        "nombre": "Aloe vera"
+    },
+    {
+        "precio": 25.05,
+        "color": "Rosa",
+        "stock": 20,
+        "nombre": "PROBANDO"
+    },
+    {
+        "precio": 12,
+        "color": "sda",
+        "stock": 4,
+        "nombre": "dsada"
+    },
+    {
+        "precio": 15.2,
+        "color": "Naranja",
+        "stock": 5,
+        "nombre": "PROBANDO 3"
+    },
+    {
+        "precio": 1.14,
+        "color": "Marrón",
+        "stock": 10,
+        "nombre": "se borra o no"
+    },
+    {
+        "precio": 1.5,
+        "color": "Rojo",
+        "stock": 1,
+        "nombre": "Rosa roja"
+    },
+    {
+        "precio": 2,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Tulipán amarillo"
+    },
+    {
+        "precio": 1,
+        "color": "Blanco",
+        "stock": 0,
+        "nombre": "Margarita blanca"
+    },
+    {
+        "precio": 3,
+        "color": "Morado",
+        "stock": 0,
+        "nombre": "Lirio morado"
+    },
+    {
+        "precio": 1.8,
+        "color": "Rosado",
+        "stock": 0,
+        "nombre": "Clavel rosado"
+    },
+    {
+        "precio": 1.6,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Rosa amarilla"
+    },
+    {
+        "precio": 2.8,
+        "color": "Blanco",
+        "stock": 9,
+        "nombre": "Peonía blanca"
+    },
+    {
+        "precio": 2.2,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Girasol"
+    },
+    {
+        "precio": 3.5,
+        "color": "Azul",
+        "stock": 5,
+        "nombre": "Hortensia azul"
+    },
+    {
+        "precio": 1.9,
+        "color": "Naranja",
+        "stock": 0,
+        "nombre": "Gladiolo naranja"
+    },
+    {
+        "precio": 5,
+        "color": "Negro",
+        "stock": 8,
+        "nombre": "Rosa negra"
+    },
+    {
+        "precio": 1.4,
+        "color": "Amarillo",
+        "stock": 49,
+        "nombre": "Clavel amarillo"
+    },
+    {
+        "precio": 18,
+        "color": "Blanco",
+        "stock": 5,
+        "nombre": "Orquídea blanca"
+    },
+    {
+        "precio": 2.3,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Narciso"
+    },
+    {
+        "precio": 1.7,
+        "color": "Morado",
+        "stock": 0,
+        "nombre": "Violeta africana"
+    },
+    {
+        "precio": 5,
+        "tamaño": "50x100",
+        "stock": 12,
+        "nombre": "Cactus pequeño"
+    },
+    {
+        "precio": 7.5,
+        "tamaño": "60x80",
+        "stock": 6,
+        "nombre": "Helecho"
+    },
+    {
+        "precio": 25,
+        "tamaño": "30x50",
+        "stock": 4,
+        "nombre": "Bonsái"
+    },
+    {
+        "precio": 15,
+        "tamaño": "40x60",
+        "stock": 6,
+        "nombre": "Orquídea azul"
+    },
+    {
+        "precio": 20,
+        "tamaño": "150x200",
+        "stock": 10,
+        "nombre": "Palma areca"
+    },
+    {
+        "precio": 12,
+        "tamaño": "70x120",
+        "stock": 6,
+        "nombre": "Cactus grande"
+    },
+    {
+        "precio": 30,
+        "tamaño": "150x200",
+        "stock": 0,
+        "nombre": "Palo de agua"
+    },
+    {
+        "precio": 10,
+        "tamaño": "100x150",
+        "stock": 12,
+        "nombre": "Sansevieria"
+    },
+    {
+        "precio": 8.5,
+        "tamaño": "200x300",
+        "stock": 15,
+        "nombre": "Hiedra trepadora"
+    },
+    {
+        "precio": 6.5,
+        "tamaño": "50x70",
+        "stock": 18,
+        "nombre": "Planta araña"
+    },
+    {
+        "precio": 25,
+        "tamaño": "120x180",
+        "stock": 8,
+        "nombre": "Palma kentia"
+    },
+    {
+        "precio": 20,
+        "tamaño": "150x200",
+        "stock": 7,
+        "nombre": "Drácena"
+    },
+    {
+        "precio": 15,
+        "tamaño": "100x150",
+        "stock": 10,
+        "nombre": "Planta ZZ"
+    },
+    {
+        "precio": 5.5,
+        "tamaño": "50x100",
+        "stock": 25,
+        "nombre": "Bamboo de la suerte"
+    },
+    {
+        "precio": 12.5,
+        "tamaño": "80x120",
+        "stock": 6,
+        "nombre": "Crotón"
+    },
+    {
+        "precio": 1.7,
+        "color": "Blanco",
+        "stock": 18,
+        "nombre": "Rosa blanca"
+    },
+    {
+        "precio": 1.5,
+        "color": "Rojo",
+        "stock": 25,
+        "nombre": "Clavel rojo"
+    },
+    {
+        "precio": 2.5,
+        "color": "Rosado",
+        "stock": 0,
+        "nombre": "Tulipán rosado"
+    },
+    {
+        "precio": 2,
+        "color": "Blanco",
+        "stock": 7,
+        "nombre": "Jazmín"
+    },
+    {
+        "precio": 1.8,
+        "color": "Rojo",
+        "stock": 14,
+        "nombre": "Geranio rojo"
+    },
+    {
+        "precio": 3.5,
+        "tamaño": "15x20",
+        "stock": 20,
+        "nombre": "Suculenta"
+    },
+    {
+        "precio": 6,
+        "tamaño": "30x50",
+        "stock": 9,
+        "nombre": "Lavanda"
+    },
+    {
+        "precio": 18,
+        "tamaño": "120x180",
+        "stock": 5,
+        "nombre": "Ficus"
+    },
+    {
+        "precio": 12,
+        "tamaño": "100x150",
+        "stock": 11,
+        "nombre": "Potos"
+    },
+    {
+        "precio": 8,
+        "tamaño": "40x60",
+        "stock": 0,
+        "nombre": "Aloe vera"
+    },
+    {
+        "precio": 25.05,
+        "color": "Rosa",
+        "stock": 20,
+        "nombre": "PROBANDO"
+    },
+    {
+        "precio": 12,
+        "color": "sda",
+        "stock": 4,
+        "nombre": "dsada"
+    },
+    {
+        "precio": 15.2,
+        "color": "Naranja",
+        "stock": 13,
+        "nombre": "PROBANDO 3"
+    },
+    {
+        "precio": 1.14,
+        "color": "Marrón",
+        "stock": 3,
+        "nombre": "se borra o no"
+    },
+    {
+        "precio": 1.5,
+        "color": "Rojo",
+        "stock": 1,
+        "nombre": "Rosa roja"
+    },
+    {
+        "precio": 2,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Tulipán amarillo"
+    },
+    {
+        "precio": 1,
+        "color": "Blanco",
+        "stock": 0,
+        "nombre": "Margarita blanca"
+    },
+    {
+        "precio": 3,
+        "color": "Morado",
+        "stock": 0,
+        "nombre": "Lirio morado"
+    },
+    {
+        "precio": 1.8,
+        "color": "Rosado",
+        "stock": 0,
+        "nombre": "Clavel rosado"
+    },
+    {
+        "precio": 1.6,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Rosa amarilla"
+    },
+    {
+        "precio": 2.8,
+        "color": "Blanco",
+        "stock": 9,
+        "nombre": "Peonía blanca"
+    },
+    {
+        "precio": 2.2,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Girasol"
+    },
+    {
+        "precio": 3.5,
+        "color": "Azul",
+        "stock": 5,
+        "nombre": "Hortensia azul"
+    },
+    {
+        "precio": 1.9,
+        "color": "Naranja",
+        "stock": 0,
+        "nombre": "Gladiolo naranja"
+    },
+    {
+        "precio": 5,
+        "color": "Negro",
+        "stock": 8,
+        "nombre": "Rosa negra"
+    },
+    {
+        "precio": 1.4,
+        "color": "Amarillo",
+        "stock": 49,
+        "nombre": "Clavel amarillo"
+    },
+    {
+        "precio": 18,
+        "color": "Blanco",
+        "stock": 5,
+        "nombre": "Orquídea blanca"
+    },
+    {
+        "precio": 2.3,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Narciso"
+    },
+    {
+        "precio": 1.7,
+        "color": "Morado",
+        "stock": 0,
+        "nombre": "Violeta africana"
+    },
+    {
+        "precio": 5,
+        "tamaño": "50x100",
+        "stock": 12,
+        "nombre": "Cactus pequeño"
+    },
+    {
+        "precio": 7.5,
+        "tamaño": "60x80",
+        "stock": 6,
+        "nombre": "Helecho"
+    },
+    {
+        "precio": 25,
+        "tamaño": "30x50",
+        "stock": 4,
+        "nombre": "Bonsái"
+    },
+    {
+        "precio": 15,
+        "tamaño": "40x60",
+        "stock": 6,
+        "nombre": "Orquídea azul"
+    },
+    {
+        "precio": 20,
+        "tamaño": "150x200",
+        "stock": 10,
+        "nombre": "Palma areca"
+    },
+    {
+        "precio": 12,
+        "tamaño": "70x120",
+        "stock": 6,
+        "nombre": "Cactus grande"
+    },
+    {
+        "precio": 30,
+        "tamaño": "150x200",
+        "stock": 0,
+        "nombre": "Palo de agua"
+    },
+    {
+        "precio": 10,
+        "tamaño": "100x150",
+        "stock": 12,
+        "nombre": "Sansevieria"
+    },
+    {
+        "precio": 8.5,
+        "tamaño": "200x300",
+        "stock": 15,
+        "nombre": "Hiedra trepadora"
+    },
+    {
+        "precio": 6.5,
+        "tamaño": "50x70",
+        "stock": 18,
+        "nombre": "Planta araña"
+    },
+    {
+        "precio": 25,
+        "tamaño": "120x180",
+        "stock": 8,
+        "nombre": "Palma kentia"
+    },
+    {
+        "precio": 20,
+        "tamaño": "150x200",
+        "stock": 7,
+        "nombre": "Drácena"
+    },
+    {
+        "precio": 15,
+        "tamaño": "100x150",
+        "stock": 10,
+        "nombre": "Planta ZZ"
+    },
+    {
+        "precio": 5.5,
+        "tamaño": "50x100",
+        "stock": 25,
+        "nombre": "Bamboo de la suerte"
+    },
+    {
+        "precio": 12.5,
+        "tamaño": "80x120",
+        "stock": 6,
+        "nombre": "Crotón"
+    },
+    {
+        "precio": 1.7,
+        "color": "Blanco",
+        "stock": 18,
+        "nombre": "Rosa blanca"
+    },
+    {
+        "precio": 1.5,
+        "color": "Rojo",
+        "stock": 25,
+        "nombre": "Clavel rojo"
+    },
+    {
+        "precio": 2.5,
+        "color": "Rosado",
+        "stock": 0,
+        "nombre": "Tulipán rosado"
+    },
+    {
+        "precio": 2,
+        "color": "Blanco",
+        "stock": 7,
+        "nombre": "Jazmín"
+    },
+    {
+        "precio": 1.8,
+        "color": "Rojo",
+        "stock": 14,
+        "nombre": "Geranio rojo"
+    },
+    {
+        "precio": 3.5,
+        "tamaño": "15x20",
+        "stock": 20,
+        "nombre": "Suculenta"
+    },
+    {
+        "precio": 6,
+        "tamaño": "30x50",
+        "stock": 9,
+        "nombre": "Lavanda"
+    },
+    {
+        "precio": 18,
+        "tamaño": "120x180",
+        "stock": 5,
+        "nombre": "Ficus"
+    },
+    {
+        "precio": 12,
+        "tamaño": "100x150",
+        "stock": 11,
+        "nombre": "Potos"
+    },
+    {
+        "precio": 8,
+        "tamaño": "40x60",
+        "stock": 0,
+        "nombre": "Aloe vera"
+    },
+    {
+        "precio": 25.05,
+        "color": "Rosa",
+        "stock": 20,
+        "nombre": "PROBANDO"
+    },
+    {
+        "precio": 12,
+        "color": "sda",
+        "stock": 4,
+        "nombre": "dsada"
+    },
+    {
+        "precio": 15.2,
+        "color": "Naranja",
+        "stock": 13,
+        "nombre": "PROBANDO 3"
+    },
+    {
+        "precio": 1.14,
+        "color": "Marrón",
+        "stock": 3,
+        "nombre": "se borra o no"
+    },
+    {
+        "precio": 1.5,
+        "color": "Rojo",
+        "stock": 1,
+        "nombre": "Rosa roja"
+    },
+    {
+        "precio": 2,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Tulipán amarillo"
+    },
+    {
+        "precio": 1,
+        "color": "Blanco",
+        "stock": 0,
+        "nombre": "Margarita blanca"
+    },
+    {
+        "precio": 3,
+        "color": "Morado",
+        "stock": 0,
+        "nombre": "Lirio morado"
+    },
+    {
+        "precio": 1.8,
+        "color": "Rosado",
+        "stock": 0,
+        "nombre": "Clavel rosado"
+    },
+    {
+        "precio": 1.6,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Rosa amarilla"
+    },
+    {
+        "precio": 2.8,
+        "color": "Blanco",
+        "stock": 9,
+        "nombre": "Peonía blanca"
+    },
+    {
+        "precio": 2.2,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Girasol"
+    },
+    {
+        "precio": 3.5,
+        "color": "Azul",
+        "stock": 5,
+        "nombre": "Hortensia azul"
+    },
+    {
+        "precio": 1.9,
+        "color": "Naranja",
+        "stock": 0,
+        "nombre": "Gladiolo naranja"
+    },
+    {
+        "precio": 5,
+        "color": "Negro",
+        "stock": 8,
+        "nombre": "Rosa negra"
+    },
+    {
+        "precio": 1.4,
+        "color": "Amarillo",
+        "stock": 49,
+        "nombre": "Clavel amarillo"
+    },
+    {
+        "precio": 18,
+        "color": "Blanco",
+        "stock": 5,
+        "nombre": "Orquídea blanca"
+    },
+    {
+        "precio": 2.3,
+        "color": "Amarillo",
+        "stock": 0,
+        "nombre": "Narciso"
+    },
+    {
+        "precio": 1.7,
+        "color": "Morado",
+        "stock": 0,
+        "nombre": "Violeta africana"
+    },
+    {
+        "precio": 5,
+        "tamaño": "50x100",
+        "stock": 12,
+        "nombre": "Cactus pequeño"
+    },
+    {
+        "precio": 7.5,
+        "tamaño": "60x80",
+        "stock": 6,
+        "nombre": "Helecho"
+    },
+    {
+        "precio": 25,
+        "tamaño": "30x50",
+        "stock": 4,
+        "nombre": "Bonsái"
+    },
+    {
+        "precio": 15,
+        "tamaño": "40x60",
+        "stock": 6,
+        "nombre": "Orquídea azul"
+    },
+    {
+        "precio": 20,
+        "tamaño": "150x200",
+        "stock": 10,
+        "nombre": "Palma areca"
+    },
+    {
+        "precio": 12,
+        "tamaño": "70x120",
+        "stock": 6,
+        "nombre": "Cactus grande"
+    },
+    {
+        "precio": 30,
+        "tamaño": "150x200",
+        "stock": 0,
+        "nombre": "Palo de agua"
+    },
+    {
+        "precio": 10,
+        "tamaño": "100x150",
+        "stock": 12,
+        "nombre": "Sansevieria"
+    },
+    {
+        "precio": 8.5,
+        "tamaño": "200x300",
+        "stock": 15,
+        "nombre": "Hiedra trepadora"
+    },
+    {
+        "precio": 6.5,
+        "tamaño": "50x70",
+        "stock": 18,
+        "nombre": "Planta araña"
+    },
+    {
+        "precio": 25,
+        "tamaño": "120x180",
+        "stock": 8,
+        "nombre": "Palma kentia"
+    },
+    {
+        "precio": 20,
+        "tamaño": "150x200",
+        "stock": 7,
+        "nombre": "Drácena"
+    },
+    {
+        "precio": 15,
+        "tamaño": "100x150",
+        "stock": 10,
+        "nombre": "Planta ZZ"
+    },
+    {
+        "precio": 5.5,
+        "tamaño": "50x100",
+        "stock": 25,
+        "nombre": "Bamboo de la suerte"
+    },
+    {
+        "precio": 12.5,
+        "tamaño": "80x120",
+        "stock": 6,
+        "nombre": "Crotón"
+    },
+    {
+        "precio": 1.7,
+        "color": "Blanco",
+        "stock": 18,
+        "nombre": "Rosa blanca"
+    },
+    {
+        "precio": 1.5,
+        "color": "Rojo",
+        "stock": 25,
+        "nombre": "Clavel rojo"
+    },
+    {
+        "precio": 2.5,
+        "color": "Rosado",
+        "stock": 0,
+        "nombre": "Tulipán rosado"
+    },
+    {
+        "precio": 2,
+        "color": "Blanco",
+        "stock": 7,
+        "nombre": "Jazmín"
+    },
+    {
+        "precio": 1.8,
+        "color": "Rojo",
+        "stock": 14,
+        "nombre": "Geranio rojo"
+    },
+    {
+        "precio": 3.5,
+        "tamaño": "15x20",
+        "stock": 20,
+        "nombre": "Suculenta"
+    },
+    {
+        "precio": 6,
+        "tamaño": "30x50",
+        "stock": 9,
+        "nombre": "Lavanda"
+    },
+    {
+        "precio": 18,
+        "tamaño": "120x180",
+        "stock": 5,
+        "nombre": "Ficus"
+    },
+    {
+        "precio": 12,
+        "tamaño": "100x150",
+        "stock": 11,
+        "nombre": "Potos"
+    },
+    {
+        "precio": 8,
+        "tamaño": "40x60",
+        "stock": 0,
+        "nombre": "Aloe vera"
+    },
+    {
+        "precio": 25.05,
+        "color": "Rosa",
+        "stock": 20,
+        "nombre": "PROBANDO"
+    },
+    {
+        "precio": 12,
+        "color": "sda",
+        "stock": 4,
+        "nombre": "dsada"
+    },
+    {
+        "precio": 15.2,
+        "color": "Naranja",
+        "stock": 13,
+        "nombre": "PROBANDO 3"
+    },
+    {
+        "precio": 12.3,
+        "color": "Blanco",
+        "stock": 12,
+        "nombre": "Jazmín"
     }
 ]
