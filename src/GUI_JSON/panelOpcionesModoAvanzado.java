@@ -24,6 +24,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
 
 
 public class panelOpcionesModoAvanzado extends javax.swing.JPanel {
@@ -36,6 +37,7 @@ public class panelOpcionesModoAvanzado extends javax.swing.JPanel {
     private guardarDatos guardarDatos;
     private guardarDatosJSON guardarDatosJSON;
     private boolean datosImportados = false;
+    Color bordeColor = new Color(0, 30, 0); 
     private Image backgroundImage;
     
     private String fondoPantalla = "res/img/panelOpcionesModoAvanzado.jpg";
@@ -142,6 +144,7 @@ public class panelOpcionesModoAvanzado extends javax.swing.JPanel {
         primerBoton.setFont(new Font("Arial",Font.BOLD,20));
         primerBoton.setHorizontalAlignment(SwingConstants.CENTER);
         primerBoton.setVerticalAlignment(SwingConstants.CENTER);
+        primerBoton.setBorder(new LineBorder(bordeColor, 4)); 
         primerBoton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -178,6 +181,7 @@ public class panelOpcionesModoAvanzado extends javax.swing.JPanel {
         segundoBoton.setFont(new Font("Arial",Font.BOLD,20));
         segundoBoton.setHorizontalAlignment(SwingConstants.CENTER);
         segundoBoton.setVerticalAlignment(SwingConstants.CENTER);
+        segundoBoton.setBorder(new LineBorder(bordeColor, 4)); 
         segundoBoton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -215,6 +219,7 @@ public class panelOpcionesModoAvanzado extends javax.swing.JPanel {
         tercerBoton.setFont(new Font("Arial",Font.BOLD,20));
         tercerBoton.setHorizontalAlignment(SwingConstants.CENTER);
         tercerBoton.setVerticalAlignment(SwingConstants.CENTER);
+        tercerBoton.setBorder(new LineBorder(bordeColor, 4)); 
         tercerBoton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {

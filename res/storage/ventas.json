@@ -318,5 +318,21 @@
             "nombre": "se borra o no"
         },
         "cantidad": 9
+    },
+    {
+        "fecha": "Thu Dec 05 03:25:05 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 2
+    },
+    {
+        "fecha": "Thu Dec 05 03:25:32 CET 2024",
+        "producto": {
+            "precio": 15.2,
+            "nombre": "PROBANDO 3"
+        },
+        "cantidad": 0
     }
 ]

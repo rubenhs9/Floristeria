@@ -21,6 +21,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
 
 
 public class panelOpciones extends javax.swing.JPanel {
@@ -31,6 +32,7 @@ public class panelOpciones extends javax.swing.JPanel {
     private JPanel panelPrincipal;
     private FloristeriaApp floristeriaApp;
     private Image backgroundImage;
+    Color bordeColor = new Color(0, 30, 0); 
     private String fondoPantalla = "res/img/panelOpciones.jpg";
     
     public panelOpciones(JFrame vpal, JPanel panelPrincipal, Color colorPrimario1, FloristeriaApp floristeriaApp) {
@@ -76,6 +78,10 @@ public class panelOpciones extends javax.swing.JPanel {
         modoAvanzado.setBorder(new EmptyBorder(0,10,0,10));
         modoAvanzado.setFont(new Font("Microsoft YaHei UI",Font.BOLD,25));
         modoAvanzado.setText("MODO AVANZADO");
+        //BORDES BOTON
+        
+        modoAvanzado.setBorder(new LineBorder(bordeColor, 4)); 
+        
         modoAvanzado.addMouseListener(new MouseAdapter(){
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -139,6 +145,10 @@ public class panelOpciones extends javax.swing.JPanel {
         primerBoton.setFont(new Font("Arial",Font.BOLD,20));
         primerBoton.setHorizontalAlignment(SwingConstants.CENTER);
         primerBoton.setVerticalAlignment(SwingConstants.CENTER);
+        
+        //BORDES BOTON
+        primerBoton.setBorder(new LineBorder(bordeColor, 4)); 
+        
         primerBoton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -174,6 +184,9 @@ public class panelOpciones extends javax.swing.JPanel {
         segundoBoton.setFont(new Font("Arial",Font.BOLD,20));
         segundoBoton.setHorizontalAlignment(SwingConstants.CENTER);
         segundoBoton.setVerticalAlignment(SwingConstants.CENTER);
+        
+        segundoBoton.setBorder(new LineBorder(bordeColor, 4)); 
+        
         segundoBoton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -210,6 +223,7 @@ public class panelOpciones extends javax.swing.JPanel {
         tercerBoton.setFont(new Font("Arial",Font.BOLD,20));
         tercerBoton.setHorizontalAlignment(SwingConstants.CENTER);
         tercerBoton.setVerticalAlignment(SwingConstants.CENTER);
+        tercerBoton.setBorder(new LineBorder(bordeColor, 4)); 
         tercerBoton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -244,6 +258,7 @@ public class panelOpciones extends javax.swing.JPanel {
         cuartoboton.setFont(new Font("Arial",Font.BOLD,20));
         cuartoboton.setHorizontalAlignment(SwingConstants.CENTER);
         cuartoboton.setVerticalAlignment(SwingConstants.CENTER);
+        cuartoboton.setBorder(new LineBorder(bordeColor, 4)); 
         cuartoboton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -277,6 +292,7 @@ public class panelOpciones extends javax.swing.JPanel {
         quintoboton.setFont(new Font("Arial",Font.BOLD,20));
         quintoboton.setHorizontalAlignment(SwingConstants.CENTER);
         quintoboton.setVerticalAlignment(SwingConstants.CENTER);
+        quintoboton.setBorder(new LineBorder(bordeColor, 4)); 
         quintoboton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
