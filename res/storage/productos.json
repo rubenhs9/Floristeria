@@ -8,19 +8,19 @@
     {
         "precio": 2,
         "color": "Amarillo",
-        "stock": 15,
+        "stock": 0,
         "nombre": "Tulipán amarillo"
     },
     {
         "precio": 1,
         "color": "Blanco",
-        "stock": 10,
+        "stock": 0,
         "nombre": "Margarita blanca"
     },
     {
         "precio": 3,
         "color": "Morado",
-        "stock": 4,
+        "stock": 0,
         "nombre": "Lirio morado"
     },
     {
@@ -56,13 +56,13 @@
     {
         "precio": 1.9,
         "color": "Naranja",
-        "stock": 9,
+        "stock": 0,
         "nombre": "Gladiolo naranja"
     },
     {
         "precio": 5,
         "color": "Negro",
-        "stock": 10,
+        "stock": 8,
         "nombre": "Rosa negra"
     },
     {
@@ -236,7 +236,31 @@
     {
         "precio": 8,
         "tamaño": "40x60",
-        "stock": 10,
+        "stock": 0,
         "nombre": "Aloe vera"
+    },
+    {
+        "precio": 25.05,
+        "color": "Rosa",
+        "stock": 20,
+        "nombre": "PROBANDO"
+    },
+    {
+        "precio": 12,
+        "color": "sda",
+        "stock": 4,
+        "nombre": "dsada"
+    },
+    {
+        "precio": 15.2,
+        "color": "Naranja",
+        "stock": 2,
+        "nombre": "PROBANDO 3"
+    },
+    {
+        "precio": 1.14,
+        "color": "Marrón",
+        "stock": 3,
+        "nombre": "se borra o no"
     }
 ]
